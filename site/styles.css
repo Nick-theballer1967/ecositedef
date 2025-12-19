@@ -122,6 +122,12 @@ main {
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+.nav-links a.active {
+  background: rgba(128, 255, 211, 0.18);
+  color: var(--text);
+  border: 1px solid rgba(128, 255, 211, 0.25);
+}
+
 .nav-links a:focus-visible,
 .nav-links a:hover {
   color: var(--text);
