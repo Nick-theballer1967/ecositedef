@@ -170,6 +170,10 @@ main {
   line-height: 1.15;
 }
 
+.hero-subline {
+  font-weight: 500;
+}
+
 .lede {
   color: var(--muted);
   font-size: 1.05rem;
