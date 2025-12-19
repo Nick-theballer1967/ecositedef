@@ -2,7 +2,7 @@
   --bg: #051520;
   --panel: rgba(255, 255, 255, 0.04);
   --border: rgba(128, 255, 211, 0.35);
-  --accent: #80ffd3;
+  --accent: #3bd6c6;
   --text: #f9f9f9;
   --muted: rgba(249, 249, 249, 0.75);
   --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
@@ -29,9 +29,14 @@ body {
   padding-top: 96px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
   display: block;
+  border-radius: var(--radius-sm);
 }
 
 main {
@@ -352,58 +357,25 @@ main {
 .image-slot {
   margin: 1rem 0 0.5rem;
   display: grid;
-  gap: 0.35rem;
-  position: relative;
+  gap: 0.5rem;
+  grid-template-rows: 1fr;
+  aspect-ratio: 16 / 9;
 }
 
 .image-slot.compact {
   margin-top: 1.5rem;
 }
 
-.placeholder {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, rgba(128, 255, 211, 0.22), rgba(255, 255, 255, 0.05));
-  border: 1px dashed rgba(255, 255, 255, 0.25);
-  position: relative;
-}
-
-.placeholder::after {
-  content: "Image coming soon";
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  color: rgba(2, 36, 47, 0.9);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  background: rgba(128, 255, 211, 0.16);
-  border-radius: inherit;
-  mix-blend-mode: screen;
-  z-index: 1;
-}
-
-.image-slot figcaption {
-  color: rgba(249, 249, 249, 0.65);
-  font-size: 0.9rem;
-}
-
-.tile.full .image-slot.wide .placeholder {
+.image-slot.wide {
   aspect-ratio: 21 / 9;
 }
 
 .slot-image {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-sm);
   border: 1px solid rgba(255, 255, 255, 0.16);
   box-shadow: var(--shadow);
-  z-index: 2;
 }
 
 .image-backed {
