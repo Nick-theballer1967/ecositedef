@@ -26,7 +26,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
-  padding-top: 96px;
+  padding-top: 120px;
 }
 
 html {
@@ -91,8 +91,8 @@ main {
 }
 
 .brand-mark {
-  width: 72px;
-  height: 72px;
+  width: 96px;
+  height: 96px;
   display: grid;
   place-items: center;
   border-radius: 12px;
@@ -538,7 +538,7 @@ textarea {
 
 @media (max-width: 720px) {
   body {
-    padding-top: 140px;
+    padding-top: 168px;
   }
 
   .topbar-inner {
