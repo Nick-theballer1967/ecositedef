@@ -91,8 +91,8 @@ main {
 }
 
 .brand-mark {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   display: grid;
   place-items: center;
   border-radius: 12px;
