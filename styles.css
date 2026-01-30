@@ -68,10 +68,20 @@ main {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(244, 247, 246, 0.92);
+  background: linear-gradient(90deg, rgba(31, 174, 138, 0.18), rgba(163, 230, 53, 0.14)),
+    rgba(244, 247, 246, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(11, 61, 46, 0.08);
   box-shadow: 0 8px 40px rgba(11, 61, 46, 0.12);
+  overflow: hidden;
+}
+
+.topbar::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1fae8a, #a3e635);
 }
 
 .topbar-inner {
