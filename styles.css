@@ -91,8 +91,8 @@ main {
 }
 
 .brand-mark {
-  width: 128px;
-  height: 128px;
+  width: 144px;
+  height: 144px;
   display: grid;
   place-items: center;
   border-radius: 12px;
@@ -110,7 +110,7 @@ main {
 }
 
 .brand-name {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
 }
 
 .nav-links {
