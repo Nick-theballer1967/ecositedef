@@ -445,6 +445,10 @@ main {
   box-shadow: var(--shadow);
 }
 
+.slot-image.case-study-top {
+  object-position: top;
+}
+
 .image-backed {
   background: linear-gradient(140deg, rgba(255, 255, 255, 0.5), rgba(31, 174, 138, 0.12));
 }
