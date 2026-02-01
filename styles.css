@@ -423,9 +423,9 @@ main {
 }
 
 .image-slot.hero-compact {
-  margin-top: 0.5rem;
-  max-width: 320px;
-  aspect-ratio: 4 / 3;
+  margin-top: 0.25rem;
+  max-width: 260px;
+  aspect-ratio: 1 / 1;
   justify-self: center;
 }
 
