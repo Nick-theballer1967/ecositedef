@@ -28,7 +28,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
-  padding-top: 96px;
+  padding-top: 128px;
 }
 
 html {
@@ -87,7 +87,7 @@ main {
 .topbar-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -127,8 +127,8 @@ main {
 }
 
 .topbar .brand-mark {
-  width: 88px;
-  height: 88px;
+  width: 112px;
+  height: 112px;
   border-radius: 14px;
 }
 
@@ -568,12 +568,17 @@ textarea {
 
 @media (max-width: 720px) {
   body {
-    padding-top: 140px;
+    padding-top: 168px;
   }
 
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .topbar .brand-mark {
+    width: 96px;
+    height: 96px;
   }
 
   .nav-links {
