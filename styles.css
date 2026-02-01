@@ -127,9 +127,9 @@ main {
 }
 
 .topbar .brand-mark {
-  width: 144px;
-  height: 144px;
-  border-radius: 12px;
+  width: 184px;
+  height: 184px;
+  border-radius: 16px;
 }
 
 .nav-links {
@@ -584,8 +584,8 @@ textarea {
   }
 
   .topbar .brand-mark {
-    width: 144px;
-    height: 144px;
+    width: 164px;
+    height: 164px;
   }
 
   .nav-links {
