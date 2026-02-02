@@ -364,6 +364,9 @@ main {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .info-card h3 {
@@ -382,6 +385,9 @@ main {
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .launch-badge {
@@ -458,6 +464,9 @@ main {
   border-radius: var(--radius);
   padding: 2rem;
   box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .tile.full {
@@ -567,6 +576,9 @@ blockquote {
   border: 1px solid rgba(11, 61, 46, 0.08);
   border-radius: var(--radius-sm);
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .contact .contact-form {
