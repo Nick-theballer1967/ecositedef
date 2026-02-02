@@ -242,7 +242,7 @@ main {
 }
 
 .hero {
-  max-width: var(--max-width);
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -251,6 +251,12 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--grid-gap);
   align-items: start;
+}
+
+@media (min-width: 1000px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  }
 }
 
 .hero-copy h1 {
