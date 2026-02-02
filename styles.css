@@ -11,7 +11,7 @@
   --radius: 16px;
   --radius-sm: 12px;
   --max-width: 1200px;
-  --grid-gap: 1.5rem;
+  --grid-gap: 2.25rem;
   color-scheme: light;
 }
 
@@ -26,7 +26,7 @@ body {
     radial-gradient(circle at 80% 0%, rgba(11, 61, 46, 0.08), transparent 40%),
     var(--bg);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.7;
   min-height: 100vh;
   padding-top: 128px;
 }
@@ -44,7 +44,7 @@ img {
 main {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 5.5rem;
   padding: 0 1.5rem 4rem;
 }
 
@@ -331,14 +331,14 @@ main {
 .hero-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .info-card {
   background: var(--panel);
   border: 1px solid rgba(11, 61, 46, 0.08);
   border-radius: var(--radius);
-  padding: 1rem 1.25rem;
+  padding: 1.5rem;
   box-shadow: var(--shadow);
 }
 
@@ -356,7 +356,7 @@ main {
   background: linear-gradient(150deg, rgba(31, 174, 138, 0.12), rgba(11, 61, 46, 0.02));
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 2rem;
   box-shadow: var(--shadow);
 }
 
@@ -373,9 +373,9 @@ main {
 .bullet-list {
   list-style: none;
   padding: 0;
-  margin: 1rem 0 1.25rem;
+  margin: 1.25rem 0 1.5rem;
   display: grid;
-  gap: 0.35rem;
+  gap: 0.5rem;
   color: var(--muted);
 }
 
@@ -395,7 +395,7 @@ main {
 }
 
 .section-header {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.25rem;
 }
 
 .section-header h2 {
@@ -432,7 +432,7 @@ main {
   background: var(--panel);
   border: 1px solid rgba(11, 61, 46, 0.08);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 2rem;
   box-shadow: var(--shadow);
 }
 
