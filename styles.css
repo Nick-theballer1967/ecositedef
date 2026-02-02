@@ -267,7 +267,7 @@ main {
   display: inline-block;
   padding: 0.65rem 1.2rem;
   border-radius: 18px;
-  background: linear-gradient(135deg, #0b3d2e 0%, #1fae8a 55%, #a3e635 100%);
+  background: linear-gradient(135deg, #0b3d2e 0%, #1fae8a 55%, #2fbf9b 100%);
   color: #f3fff9;
   box-shadow: 0 18px 45px rgba(11, 61, 46, 0.35);
   border: 1px solid rgba(11, 61, 46, 0.2);
