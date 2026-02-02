@@ -213,17 +213,19 @@ main.main-compact {
 }
 
 .impact-proof {
-  color: #f7fff9;
+  color: #ffffff;
   font-weight: 600;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 3px;
+  text-decoration-color: #ffffff;
+  text-shadow: 0 1px 2px rgba(6, 35, 26, 0.45);
 }
 
 .impact-proof:hover,
 .impact-proof:focus-visible {
-  color: #b5ffe6;
-  text-decoration-color: #b5ffe6;
+  color: #e6fff5;
+  text-decoration-color: #e6fff5;
 }
 
 .impact-list {
