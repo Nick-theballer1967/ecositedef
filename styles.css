@@ -335,6 +335,17 @@ main {
   align-items: stretch;
 }
 
+.hero-cards .impact-strip {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+}
+
+.hero-cards .impact-strip-inner {
+  max-width: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 @media (min-width: 900px) {
   .hero-cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
