@@ -454,6 +454,10 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.tile-grid.benefits-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .tile-grid.two {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -702,6 +706,10 @@ textarea {
   .banner {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .tile-grid.benefits-grid {
+    grid-template-columns: 1fr;
   }
 }
 
