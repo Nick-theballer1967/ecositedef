@@ -208,6 +208,20 @@ main {
   color: #d9ffeb;
 }
 
+.impact-proof {
+  color: #f7fff9;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.impact-proof:hover,
+.impact-proof:focus-visible {
+  color: #b5ffe6;
+  text-decoration-color: #b5ffe6;
+}
+
 .impact-list {
   list-style: none;
   display: flex;
