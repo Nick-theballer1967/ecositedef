@@ -104,8 +104,8 @@ main {
 }
 
 .brand-mark {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   display: grid;
   place-items: center;
   border-radius: 12px;
@@ -114,12 +114,13 @@ main {
   border: 1px solid var(--border);
   color: var(--accent-strong);
   font-weight: 800;
+  padding: 0.4rem;
 }
 
 .brand-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
   display: block;
 }
@@ -129,8 +130,8 @@ main {
 }
 
 .topbar .brand-mark {
-  width: 144px;
-  height: 144px;
+  width: 168px;
+  height: 168px;
   border-radius: 14px;
 }
 
@@ -669,6 +670,11 @@ textarea {
   gap: 1rem;
 }
 
+.footer .brand-mark {
+  width: 152px;
+  height: 152px;
+}
+
 .footer-text {
   color: var(--muted);
   font-size: 0.95rem;
@@ -703,8 +709,8 @@ textarea {
   }
 
   .topbar .brand-mark {
-    width: 112px;
-    height: 112px;
+    width: 132px;
+    height: 132px;
   }
 
   .nav-links {
