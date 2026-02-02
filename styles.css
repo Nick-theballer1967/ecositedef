@@ -454,6 +454,10 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.tile-grid.unique-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .tile-grid.benefits-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
