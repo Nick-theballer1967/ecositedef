@@ -335,6 +335,12 @@ main {
   align-items: stretch;
 }
 
+@media (min-width: 900px) {
+  .hero-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .info-card {
   background: var(--panel);
   border: 1px solid rgba(11, 61, 46, 0.08);
