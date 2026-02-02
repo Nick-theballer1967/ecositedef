@@ -332,6 +332,7 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
+  align-items: stretch;
 }
 
 .info-card {
@@ -481,6 +482,17 @@ main {
   max-width: 380px;
   aspect-ratio: 16 / 9;
   justify-self: stretch;
+}
+
+.hero-card-image {
+  margin: 0;
+  aspect-ratio: auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.hero-card-image .slot-image {
+  border-radius: inherit;
 }
 
 .image-slot.compact {
