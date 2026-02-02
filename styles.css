@@ -28,7 +28,7 @@ body {
   color: var(--text);
   line-height: 1.7;
   min-height: 100vh;
-  padding-top: 96px;
+  padding-top: 120px;
 }
 
 html {
@@ -104,8 +104,8 @@ main {
 }
 
 .brand-mark {
-  width: 96px;
-  height: 96px;
+  width: 120px;
+  height: 120px;
   display: grid;
   place-items: center;
   border-radius: 12px;
@@ -129,8 +129,8 @@ main {
 }
 
 .topbar .brand-mark {
-  width: 112px;
-  height: 112px;
+  width: 144px;
+  height: 144px;
   border-radius: 14px;
 }
 
@@ -661,8 +661,12 @@ textarea {
   padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
+}
+
+.footer .brand {
+  gap: 1rem;
 }
 
 .footer-text {
@@ -688,7 +692,7 @@ textarea {
 
 @media (max-width: 720px) {
   body {
-    padding-top: 112px;
+    padding-top: 120px;
   }
 
   .topbar-inner {
@@ -699,8 +703,8 @@ textarea {
   }
 
   .topbar .brand-mark {
-    width: 96px;
-    height: 96px;
+    width: 112px;
+    height: 112px;
   }
 
   .nav-links {
