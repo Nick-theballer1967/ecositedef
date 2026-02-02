@@ -48,6 +48,10 @@ main {
   padding: 0 1.5rem 4rem;
 }
 
+main.main-compact {
+  gap: 3.5rem;
+}
+
 .skip-link {
   position: absolute;
   left: -999px;
