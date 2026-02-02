@@ -104,8 +104,8 @@ main {
 }
 
 .brand-mark {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   display: grid;
   place-items: center;
   border-radius: 12px;
@@ -130,8 +130,8 @@ main {
 }
 
 .topbar .brand-mark {
-  width: 168px;
-  height: 168px;
+  width: 180px;
+  height: 180px;
   border-radius: 14px;
 }
 
