@@ -182,8 +182,9 @@ main {
   background: linear-gradient(90deg, rgba(11, 61, 46, 0.92), rgba(31, 174, 138, 0.9));
   color: #f7fff9;
   border: 1px solid rgba(11, 61, 46, 0.2);
-  border-radius: 999px;
+  border-radius: 18px;
   box-shadow: var(--shadow);
+  margin-top: 2rem;
 }
 
 .impact-strip-inner {
