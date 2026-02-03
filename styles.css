@@ -114,17 +114,17 @@ main.main-compact {
   place-items: center;
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(31, 174, 138, 0.16), rgba(11, 61, 46, 0.05));
+  background: #ffffff;
   border: 1px solid var(--border);
   color: var(--accent-strong);
   font-weight: 800;
-  padding: 0;
+  padding: 0.5rem;
 }
 
 .brand-logo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 10px;
   display: block;
 }
