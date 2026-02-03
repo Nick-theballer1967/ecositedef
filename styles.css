@@ -755,6 +755,10 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+  .tile-grid.unique-grid {
+    grid-template-columns: 1fr;
+  }
+
   .tile-grid.advantage-grid {
     grid-template-columns: 1fr;
   }
