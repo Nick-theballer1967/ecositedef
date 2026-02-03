@@ -612,7 +612,6 @@ blockquote {
 
 .kpi-card {
   background: rgba(31, 174, 138, 0.08);
-  border: 1px solid rgba(11, 61, 46, 0.08);
   border-radius: var(--radius-sm);
   padding: 1rem;
   display: flex;
