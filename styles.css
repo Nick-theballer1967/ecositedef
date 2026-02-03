@@ -118,7 +118,7 @@ main.main-compact {
   border: 1px solid var(--border);
   color: var(--accent-strong);
   font-weight: 800;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .brand-logo {
@@ -138,6 +138,7 @@ main.main-compact {
   width: 180px;
   height: 180px;
   border-radius: 14px;
+  padding: 0.15rem;
 }
 
 .nav-links {
