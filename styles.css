@@ -466,6 +466,10 @@ main.main-compact {
   margin: 0.2rem 0 0;
 }
 
+.section-cta {
+  margin-top: 2rem;
+}
+
 .tile-grid {
   display: grid;
   gap: var(--grid-gap);
