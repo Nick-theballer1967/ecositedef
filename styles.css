@@ -28,7 +28,7 @@ body {
   color: var(--text);
   line-height: 1.7;
   min-height: 100vh;
-  padding-top: 120px;
+  padding-top: 0;
 }
 
 html {
@@ -726,10 +726,6 @@ textarea {
 }
 
 @media (max-width: 720px) {
-  body {
-    padding-top: 120px;
-  }
-
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -744,6 +740,16 @@ textarea {
 
   .nav-links {
     flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .nav-links li {
+    flex: 1 1 auto;
+  }
+
+  .nav-links a {
+    display: block;
+    white-space: normal;
   }
 
   .banner {
