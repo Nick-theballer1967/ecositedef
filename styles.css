@@ -306,6 +306,21 @@ main.main-compact {
   margin-bottom: 1.5rem;
 }
 
+.hero-lede {
+  color: var(--text);
+  font-size: clamp(1.1rem, 1.5vw, 1.25rem);
+  font-weight: 600;
+  max-width: max-content;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .hero-lede {
+    max-width: none;
+    white-space: normal;
+  }
+}
+
 .cta-group {
   display: flex;
   flex-wrap: wrap;
