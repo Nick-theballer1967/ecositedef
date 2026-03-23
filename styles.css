@@ -619,6 +619,98 @@ blockquote {
   height: 100%;
 }
 
+.proof-brief-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: var(--grid-gap);
+  align-items: stretch;
+  padding: clamp(1.75rem, 3vw, 2.5rem);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(11, 61, 46, 0.96), rgba(16, 96, 74, 0.92));
+  color: #f3fff9;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(31, 174, 138, 0.18);
+}
+
+.proof-brief .eyebrow {
+  color: #cffff0;
+}
+
+.proof-brief-copy h2 {
+  margin: 0.2rem 0 1rem;
+}
+
+.proof-brief-copy p {
+  margin: 0 0 1rem;
+  color: rgba(243, 255, 249, 0.88);
+  max-width: 62ch;
+}
+
+.proof-brief-copy .btn {
+  margin-top: 0.5rem;
+}
+
+.proof-brief-copy .btn.secondary {
+  background: linear-gradient(135deg, rgba(31, 174, 138, 0.96), rgba(163, 230, 53, 0.92));
+  color: #05261c;
+  border-color: transparent;
+  box-shadow: 0 18px 35px rgba(5, 38, 28, 0.24);
+}
+
+.proof-brief-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+}
+
+.proof-brief-kicker {
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d7fff0;
+}
+
+.proof-brief-card h3 {
+  margin: 1rem 0 0.75rem;
+  font-size: 1.15rem;
+}
+
+.proof-brief-card p {
+  margin: 0;
+  color: rgba(243, 255, 249, 0.8);
+}
+
+.proof-brief-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.proof-brief-meta span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 0.85rem;
+  color: #effff7;
+}
+
 .contact .contact-form {
   display: grid;
   gap: 0.75rem;
@@ -726,6 +818,15 @@ textarea {
 }
 
 @media (max-width: 720px) {
+  .proof-brief-shell {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .proof-brief-card {
+    padding: 1.25rem;
+  }
+
   .topbar-inner {
     flex-direction: column;
     align-items: flex-start;
