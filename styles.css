@@ -283,7 +283,7 @@ main.main-compact {
 }
 
 .hero-copy h1 {
-  margin: 0 0 1rem;
+  margin: 0;
   font-size: clamp(2rem, 4vw, 2.8rem);
   line-height: 1.15;
   display: inline-block;
@@ -297,13 +297,18 @@ main.main-compact {
 }
 
 .hero-subline {
-  font-weight: 500;
+  margin: 0.45rem 0 1.15rem;
+  font-size: clamp(1.35rem, 2.1vw, 1.7rem);
+  line-height: 1.25;
+  font-weight: 600;
+  color: color-mix(in srgb, var(--accent-strong) 82%, white 18%);
+  max-width: 34ch;
 }
 
 .lede {
   color: var(--muted);
   font-size: 1.05rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem;
 }
 
 .cta-group {
