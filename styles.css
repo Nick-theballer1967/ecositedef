@@ -729,46 +729,59 @@ blockquote {
 }
 
 .proof-focus-chart {
-  margin: 0 0 1.4rem;
-  padding: 1.1rem;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(11, 61, 46, 0.12);
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.97), rgba(239, 255, 248, 0.9));
+  border: 1px solid rgba(11, 61, 46, 0.16);
+  box-shadow: 0 18px 36px rgba(11, 61, 46, 0.12);
 }
 
 .proof-chart {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 12px;
-  border: 1px solid rgba(11, 61, 46, 0.08);
+  border-radius: 13px;
+  border: 1px solid rgba(11, 61, 46, 0.1);
+  box-shadow: 0 10px 20px rgba(11, 61, 46, 0.08);
 }
 
 .proof-focus-chart figcaption {
-  margin-top: 0.75rem;
+  margin-top: 0.6rem;
+  padding: 0.72rem 0.85rem;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 61, 46, 0.12);
+  background: rgba(245, 255, 250, 0.88);
+  display: grid;
+  gap: 0.2rem;
   font-size: 0.9rem;
   color: var(--muted);
-  line-height: 1.45;
+  line-height: 1.4;
 }
 
 .proof-focus-chart figcaption p {
   margin: 0;
 }
 
+.proof-focus-chart figcaption p:first-child {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .proof-focus-chart figcaption p + p {
-  margin-top: 0.35rem;
+  margin-top: 0.1rem;
 }
 
 .proof-focus-grid {
   gap: 1rem;
-  margin: 0.75rem 0 0.2rem;
+  margin: 0.55rem 0 0.2rem;
   align-items: stretch;
 }
 
 .proof-card {
   height: 100%;
-  padding: 1.45rem;
-  box-shadow: 0 14px 36px rgba(11, 61, 46, 0.1);
+  padding: 1.35rem;
+  box-shadow: 0 11px 28px rgba(11, 61, 46, 0.09);
   gap: 0.75rem;
 }
 
@@ -960,12 +973,18 @@ textarea {
   }
 
   .proof-focus-chart {
-    padding: 0.7rem;
-    margin-bottom: 1.05rem;
+    padding: 0.72rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .proof-focus-chart figcaption {
+    margin-top: 0.5rem;
+    padding: 0.58rem 0.65rem;
+    font-size: 0.84rem;
   }
 
   .proof-card {
-    padding: 1.1rem;
+    padding: 1.05rem;
   }
 
   .proof-card h3 {
