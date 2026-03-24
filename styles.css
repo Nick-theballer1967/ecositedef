@@ -711,6 +711,68 @@ blockquote {
   color: #effff7;
 }
 
+.proof-focus {
+  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+  border-radius: 24px;
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.92), rgba(31, 174, 138, 0.08));
+  border: 1px solid rgba(11, 61, 46, 0.1);
+  box-shadow: var(--shadow);
+}
+
+.proof-focus-header {
+  max-width: 78ch;
+  margin-bottom: 1.5rem;
+}
+
+.proof-focus-header .section-intro {
+  max-width: 70ch;
+}
+
+.proof-focus-chart {
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(11, 61, 46, 0.1);
+}
+
+.proof-chart {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 61, 46, 0.08);
+}
+
+.proof-focus-chart figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.proof-focus-grid {
+  gap: 1rem;
+}
+
+.proof-card {
+  padding: 1.5rem;
+  box-shadow: 0 14px 36px rgba(11, 61, 46, 0.1);
+}
+
+.proof-card p {
+  margin-bottom: 0;
+}
+
+.proof-focus-close {
+  margin: 1.25rem 0 0;
+  max-width: 72ch;
+  color: var(--accent-strong);
+  font-weight: 500;
+}
+
+.proof-focus-cta {
+  margin-top: 1.25rem;
+}
+
 .contact .contact-form {
   display: grid;
   gap: 0.75rem;
@@ -868,6 +930,18 @@ textarea {
 
   .tile-grid.advantage-grid {
     grid-template-columns: 1fr;
+  }
+
+  .proof-focus {
+    padding: 1.2rem;
+  }
+
+  .proof-focus-chart {
+    padding: 0.75rem;
+  }
+
+  .proof-card {
+    padding: 1.25rem;
   }
 }
 
