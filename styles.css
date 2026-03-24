@@ -737,6 +737,7 @@ blockquote {
 }
 
 .proof-chart {
+  display: block;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -750,6 +751,14 @@ blockquote {
   line-height: 1.45;
 }
 
+.proof-focus-chart figcaption p {
+  margin: 0;
+}
+
+.proof-focus-chart figcaption p + p {
+  margin-top: 0.35rem;
+}
+
 .proof-focus-grid {
   gap: 1rem;
   margin: 0.75rem 0 0.2rem;
@@ -757,6 +766,7 @@ blockquote {
 }
 
 .proof-card {
+  height: 100%;
   padding: 1.45rem;
   box-shadow: 0 14px 36px rgba(11, 61, 46, 0.1);
   gap: 0.75rem;
