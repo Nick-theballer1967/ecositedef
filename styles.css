@@ -712,11 +712,11 @@ blockquote {
 }
 
 .proof-focus {
-  padding: clamp(1.5rem, 2.5vw, 2.5rem);
+  padding: clamp(1.6rem, 2.8vw, 2.75rem);
   border-radius: 24px;
-  background: linear-gradient(150deg, rgba(255, 255, 255, 0.92), rgba(31, 174, 138, 0.08));
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.96), rgba(31, 174, 138, 0.06));
   border: 1px solid rgba(11, 61, 46, 0.1);
-  box-shadow: var(--shadow);
+  box-shadow: 0 20px 44px rgba(11, 61, 46, 0.1);
 }
 
 .proof-focus-header {
@@ -729,11 +729,11 @@ blockquote {
 }
 
 .proof-focus-chart {
-  margin: 0 0 1.5rem;
-  padding: 1rem;
+  margin: 0 0 1.75rem;
+  padding: 1.1rem;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.78);
-  border: 1px solid rgba(11, 61, 46, 0.1);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(11, 61, 46, 0.12);
 }
 
 .proof-chart {
@@ -747,10 +747,12 @@ blockquote {
   margin-top: 0.75rem;
   font-size: 0.9rem;
   color: var(--muted);
+  line-height: 1.45;
 }
 
 .proof-focus-grid {
   gap: 1rem;
+  margin-top: 0.5rem;
 }
 
 .proof-card {
@@ -763,14 +765,15 @@ blockquote {
 }
 
 .proof-focus-close {
-  margin: 1.25rem 0 0;
+  margin: 1.5rem 0 0;
   max-width: 72ch;
   color: var(--accent-strong);
   font-weight: 500;
+  line-height: 1.6;
 }
 
 .proof-focus-cta {
-  margin-top: 1.25rem;
+  margin-top: 1.4rem;
 }
 
 .contact .contact-form {
@@ -933,15 +936,26 @@ textarea {
   }
 
   .proof-focus {
-    padding: 1.2rem;
+    padding: 1.15rem;
+    border-radius: 18px;
   }
 
   .proof-focus-chart {
-    padding: 0.75rem;
+    padding: 0.7rem;
+    margin-bottom: 1.25rem;
   }
 
   .proof-card {
-    padding: 1.25rem;
+    padding: 1.1rem;
+  }
+
+  .proof-focus-close {
+    margin-top: 1.2rem;
+  }
+
+  .proof-focus-cta .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
