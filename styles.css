@@ -729,30 +729,67 @@ blockquote {
 }
 
 .proof-focus-chart {
-  margin: 0 0 1.4rem;
-  padding: 1.1rem;
+  margin: 0;
+  padding: 0.85rem;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(11, 61, 46, 0.12);
 }
 
-.proof-chart {
-  width: 100%;
-  height: auto;
+.proof-chart-frame {
   border-radius: 12px;
   border: 1px solid rgba(11, 61, 46, 0.08);
+  overflow: hidden;
+  background: #eaf3ef;
+}
+
+.proof-chart {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .proof-focus-chart figcaption {
-  margin-top: 0.75rem;
+  margin-top: 0.7rem;
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.45;
 }
 
+.proof-chart-explainer {
+  margin: 0.9rem 0 1.25rem;
+  padding: 0.78rem 0.95rem;
+  border-radius: 12px;
+  border: 1px solid rgba(11, 61, 46, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 0.35rem;
+  font-size: 0.91rem;
+  line-height: 1.45;
+  color: rgba(11, 61, 46, 0.9);
+}
+
+.proof-chart-explainer-line {
+  display: block;
+}
+
+.proof-chart-explainer-lead {
+  font-weight: 600;
+  color: rgba(11, 61, 46, 0.84);
+}
+
+.proof-chart-legend {
+  color: rgba(11, 61, 46, 0.78);
+}
+
 .proof-focus-grid {
   gap: 1rem;
-  margin: 0.75rem 0 0.2rem;
+  margin: 0 0 0.35rem;
   align-items: stretch;
 }
 
@@ -760,6 +797,7 @@ blockquote {
   padding: 1.45rem;
   box-shadow: 0 14px 36px rgba(11, 61, 46, 0.1);
   gap: 0.75rem;
+  justify-content: flex-start;
 }
 
 .proof-card h3 {
@@ -951,7 +989,6 @@ textarea {
 
   .proof-focus-chart {
     padding: 0.7rem;
-    margin-bottom: 1.05rem;
   }
 
   .proof-card {
@@ -964,6 +1001,13 @@ textarea {
 
   .proof-focus-close {
     margin-top: 1.2rem;
+  }
+
+  .proof-chart-explainer {
+    margin: 0.8rem 0 1rem;
+    padding: 0.72rem 0.8rem;
+    font-size: 0.88rem;
+    row-gap: 0.3rem;
   }
 
   .proof-focus-cta .btn {
