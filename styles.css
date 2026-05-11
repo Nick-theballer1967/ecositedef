@@ -592,10 +592,10 @@ main.main-compact {
   margin-top: 0.3rem;
   padding: 0.95rem 1rem;
   border-radius: 14px;
-  border: 1px solid rgba(163, 230, 53, 0.35);
-  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(31, 174, 138, 0.28);
+  background: rgba(255, 255, 255, 0.82);
   font-weight: 600;
-  color: #ffffff;
+  color: #1f2933;
 }
 
 .tile-grid {
