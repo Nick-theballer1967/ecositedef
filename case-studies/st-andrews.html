@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University of St Andrews Case Study | EcoAI Technologies</title>
+  <meta name="description" content="How EcoAI's myCoreAI platform delivered verified HVAC electricity and heat savings at the University of St Andrews' Scottish Oceans Institute, working alongside the existing Building Management System.">
+  <meta property="og:title" content="University of St Andrews AI Optimisation Case Study | EcoAI Technologies">
+  <meta property="og:description" content="Verified HVAC electricity and heat savings delivered at the University of St Andrews' Scottish Oceans Institute using EcoAI's myCoreAI platform.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ecoai.energy/case-studies/st-andrews.html">
+  <link rel="canonical" href="https://www.ecoai.energy/case-studies/st-andrews.html">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .case-study-page {
+      gap: 4rem;
+    }
+
+    .case-hero {
+      max-width: var(--max-width);
+      width: 100%;
+      padding: clamp(1.5rem, 3vw, 2.6rem);
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(11, 61, 46, 0.96), rgba(16, 96, 74, 0.9));
+      color: #f7fff9;
+      box-shadow: 0 24px 52px rgba(11, 61, 46, 0.24);
+      border: 1px solid rgba(31, 174, 138, 0.24);
+    }
+
+    .case-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: clamp(1.4rem, 3vw, 2.4rem);
+      align-items: center;
+    }
+
+    .case-hero .eyebrow,
+    .case-hero h1 {
+      color: #f7fff9;
+    }
+
+    .case-hero h1 {
+      margin: 0.45rem 0 1rem;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.08;
+      max-width: 14ch;
+    }
+
+    .case-hero .lede {
+      color: rgba(247, 255, 249, 0.86);
+      font-size: 1.08rem;
+      max-width: 66ch;
+    }
+
+    .case-context {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 1.2rem 0 1.5rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .case-context li {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+      color: #eafff5;
+      border-radius: 999px;
+      padding: 0.42rem 0.72rem;
+      font-weight: 700;
+      font-size: 0.86rem;
+    }
+
+    .case-hero-card {
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 1.4rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .case-hero-card strong {
+      display: block;
+      font-size: clamp(2.1rem, 5vw, 3.6rem);
+      line-height: 1;
+      color: #b8ef49;
+    }
+
+    .case-hero-card span {
+      color: rgba(247, 255, 249, 0.86);
+      font-weight: 700;
+    }
+
+    .case-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .case-metric {
+      background: var(--panel);
+      border: 1px solid rgba(11, 61, 46, 0.1);
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 14px 30px rgba(11, 61, 46, 0.1);
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .case-metric strong {
+      display: block;
+      color: var(--accent-strong);
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
+      line-height: 1.05;
+    }
+
+    .case-metric span {
+      color: var(--muted);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .case-panel {
+      padding: clamp(1.4rem, 2.8vw, 2.4rem);
+      border-radius: 22px;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.98), rgba(31, 174, 138, 0.07));
+      border: 1px solid rgba(11, 61, 46, 0.1);
+      box-shadow: 0 18px 40px rgba(11, 61, 46, 0.1);
+    }
+
+    .case-panel h2,
+    .case-panel h3 {
+      margin-top: 0;
+    }
+
+    .case-copy-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: clamp(1.4rem, 3vw, 2.4rem);
+      align-items: start;
+    }
+
+    .results-table-wrap {
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1px solid rgba(11, 61, 46, 0.12);
+      background: #ffffff;
+    }
+
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+
+    .results-table th,
+    .results-table td {
+      padding: 0.95rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(11, 61, 46, 0.1);
+      vertical-align: top;
+    }
+
+    .results-table th {
+      background: rgba(11, 61, 46, 0.06);
+      color: var(--accent-strong);
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .results-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .highlight-panel {
+      background: linear-gradient(135deg, rgba(11, 61, 46, 0.96), rgba(16, 96, 74, 0.9));
+      color: #f7fff9;
+    }
+
+    .highlight-panel h2,
+    .highlight-panel .eyebrow {
+      color: #f7fff9;
+    }
+
+    .highlight-panel p {
+      color: rgba(247, 255, 249, 0.88);
+    }
+
+    .commentary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .commentary-card {
+      background: #ffffff;
+      border: 1px solid rgba(11, 61, 46, 0.1);
+      border-radius: 16px;
+      padding: 1.4rem;
+      box-shadow: 0 12px 28px rgba(11, 61, 46, 0.08);
+    }
+
+    .commentary-card h3 {
+      margin-bottom: 0.2rem;
+      color: var(--accent-strong);
+    }
+
+    .commentary-card .role {
+      margin: 0 0 1rem;
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .verification-note {
+      border-left: 5px solid var(--accent);
+      background: rgba(31, 174, 138, 0.08);
+    }
+
+    @media (max-width: 960px) {
+      .case-hero-grid,
+      .case-copy-grid,
+      .commentary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .case-study-page {
+        gap: 2.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .case-hero,
+      .case-panel {
+        border-radius: 18px;
+        padding: 1.15rem;
+      }
+
+      .case-hero h1 {
+        max-width: none;
+      }
+
+      .case-metric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-metric {
+        min-height: 120px;
+      }
+
+      .case-context li {
+        width: 100%;
+      }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H8XWY26S1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-7H8XWY26S1');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html" aria-label="EcoAI homepage">
+        <div class="brand-mark"><img class="brand-logo" src="../assets/logo.png" alt="EcoAI logo"></div>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../how-it-works.html">How it works</a></li>
+          <li><a href="../economics.html">Economics</a></li>
+          <li><a href="../proof.html">Proof</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="case-study-page">
+    <section class="case-hero" aria-labelledby="case-hero-title">
+      <div class="case-hero-grid">
+        <div>
+          <p class="eyebrow">University of St Andrews / Scottish Oceans Institute / Gatty Marine Laboratory</p>
+          <h1 id="case-hero-title">University of St Andrews: AI-driven optimisation at the Scottish Oceans Institute</h1>
+          <p class="lede">Verified HVAC electricity and heat savings delivered by myCoreAI working alongside the existing Siemens Desigo CC Building Management System.</p>
+          <ul class="case-context" aria-label="Case study context">
+            <li>Live occupied university building</li>
+            <li>Weather-normalised reporting</li>
+            <li>No infrastructure replacement</li>
+          </ul>
+          <div class="cta-group">
+            <a class="btn primary" href="/assets/st-andrews-case-study.pdf" target="_blank" rel="noopener" data-ga-event="download_case_study" data-ga-link-text="Download the full case study" data-ga-section="st_andrews_hero">Download the full case study</a>
+            <a class="btn ghost" href="/contact.html" data-ga-event="start_savings_review" data-ga-link-text="Discuss a similar project" data-ga-section="st_andrews_hero">Discuss a similar project</a>
+          </div>
+        </div>
+        <aside class="case-hero-card" aria-label="Headline result">
+          <div>
+            <strong>158 MWh</strong>
+            <span>measured energy saving</span>
+          </div>
+          <div>
+            <strong>29.3 tCO2e</strong>
+            <span>measured operational carbon reduction</span>
+          </div>
+          <p>Savings delivered without sacrificing comfort or disrupting building operations.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="key-results-title">
+      <div class="section-header">
+        <p class="eyebrow">Key results</p>
+        <h2 id="key-results-title">Measured savings across electricity, heat, cost and carbon</h2>
+      </div>
+      <div class="case-metric-grid">
+        <article class="case-metric"><strong>21.1%</strong><span>HVAC electricity reduction</span></article>
+        <article class="case-metric"><strong>9.2%</strong><span>heat reduction</span></article>
+        <article class="case-metric"><strong>158 MWh</strong><span>saved</span></article>
+        <article class="case-metric"><strong>29.3 tCO2e</strong><span>reduced</span></article>
+        <article class="case-metric"><strong>£10.4k</strong><span>net benefit after subscription</span></article>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="summary-title">
+      <div class="case-copy-grid">
+        <div>
+          <p class="eyebrow">Executive summary</p>
+          <h2 id="summary-title">AI optimisation in an already well-performing building</h2>
+        </div>
+        <div>
+          <p>The University of St Andrews is demonstrating how artificial intelligence can deliver measurable energy performance improvements in already well-performing buildings.</p>
+          <p>Across the April 2025 to April 2026 reporting period, myCoreAI delivered a 21.1% reduction in HVAC electricity consumption and a 9.2% reduction in heat consumption, measured against a weather-normalised baseline.</p>
+          <p><strong>Savings were delivered without sacrificing comfort or disrupting building operations.</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="deployment-title">
+      <div class="case-copy-grid">
+        <div>
+          <p class="eyebrow">Deployment</p>
+          <h2 id="deployment-title">Optimisation alongside the existing Siemens Desigo CC BMS</h2>
+        </div>
+        <div>
+          <p>myCoreAI was deployed as an optimisation layer alongside the existing Siemens Desigo CC Building Management System.</p>
+          <p>The existing Building Management System continued to control the mechanical plant, while myCoreAI adjusted operating setpoints through 15-minute optimisation cycles based on live building conditions and forecast demand.</p>
+          <p>Deployment was completed without disruption and without replacing existing infrastructure.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="results-title">
+      <div class="section-header">
+        <p class="eyebrow">Measured results</p>
+        <h2 id="results-title">AI off vs AI on performance</h2>
+      </div>
+      <div class="results-table-wrap">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Measure</th>
+              <th>AI off</th>
+              <th>AI on</th>
+              <th>Saving</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>HVAC electricity</strong></td>
+              <td>122,937 kWh</td>
+              <td>97,042 kWh</td>
+              <td>25,896 kWh / 21.1%</td>
+            </tr>
+            <tr>
+              <td><strong>Heat</strong></td>
+              <td>1,434,961 kWh</td>
+              <td>1,302,742 kWh</td>
+              <td>132,218 kWh / 9.2%</td>
+            </tr>
+            <tr>
+              <td><strong>Total measured saving</strong></td>
+              <td colspan="2">April 2025 to April 2026 reporting period</td>
+              <td>158,114 kWh</td>
+            </tr>
+            <tr>
+              <td><strong>Measured gross benefit</strong></td>
+              <td colspan="2">Financial benefit before subscription</td>
+              <td>Approx. £14.4k</td>
+            </tr>
+            <tr>
+              <td><strong>Measured net benefit</strong></td>
+              <td colspan="2">After c£4k annual subscription</td>
+              <td>Approx. £10.4k</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section case-panel highlight-panel" aria-labelledby="current-title">
+      <p class="eyebrow">Current performance</p>
+      <h2 id="current-title">Annualised performance after learning and full control</h2>
+      <p>Now that myCoreAI has learned the building and full control has been established, current performance is equivalent to approximately 207 MWh/year, delivering around £19.4k/year of gross financial benefit and approximately £15k/year net benefit after annual subscription.</p>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="carbon-title">
+      <div class="case-copy-grid">
+        <div>
+          <p class="eyebrow">Operational carbon</p>
+          <h2 id="carbon-title">Measured carbon reduction using UK Government 2025 factors</h2>
+        </div>
+        <div>
+          <p>Using UK Government 2025 conversion factors for grid electricity and mains gas, measured savings equate to an estimated operational carbon reduction of 29.3 tCO2e. On the current annualised position, this rises to approximately 38.4 tCO2e/year.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="commentary-title">
+      <div class="section-header">
+        <p class="eyebrow">Leadership commentary</p>
+        <h2 id="commentary-title">Project commentary</h2>
+      </div>
+      <div class="commentary-grid">
+        <article class="commentary-card">
+          <h3>Amanda Cook</h3>
+          <p class="role">BMS Manager</p>
+          <p>The project demonstrates how artificial intelligence can support measurable energy performance improvements in an already well-performing building, while maintaining comfort and normal operations.</p>
+        </article>
+        <article class="commentary-card">
+          <h3>Michal Rosa</h3>
+          <p class="role">BMS Project Engineer</p>
+          <p>The deployment shows myCoreAI working alongside the existing Building Management System, using live building conditions and 15-minute optimisation cycles to reduce wasted HVAC energy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section case-panel verification-note" aria-labelledby="verification-title">
+      <p class="eyebrow">Verification note</p>
+      <h2 id="verification-title">Verified site reporting</h2>
+      <p>All reported savings are based on weather-normalised site reporting and verified University of St Andrews meter data, not estimates or simulations.</p>
+    </section>
+
+    <section class="section contact section-contact-decisive" aria-labelledby="case-cta-title">
+      <div class="section-header">
+        <p class="eyebrow">Next step</p>
+        <h2 id="case-cta-title">Could your estate deliver similar savings?</h2>
+        <p class="section-intro">EcoAI helps existing buildings reduce HVAC energy consumption, operational carbon and operating cost by optimising the infrastructure already in place.</p>
+      </div>
+      <div class="section-cta">
+        <a class="btn primary" href="/contact.html" data-ga-event="start_savings_review" data-ga-link-text="Book a short discussion" data-ga-section="st_andrews_bottom">Book a short discussion</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="brand">
+        <div class="brand-mark"><img class="brand-logo" src="../assets/logo.png" alt="EcoAI logo"></div>
+        <span class="brand-name" aria-label="EcoAI">EcoAI</span>
+      </div>
+      <div class="footer-text">© EcoAI Technologies Ltd. Delivering AI-driven optimisation for sustainable buildings.</div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../how-it-works.html">How it works</a>
+        <a href="../economics.html">Economics</a>
+        <a href="../proof.html">Proof</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../site.js"></script>
+</body>
+</html>
