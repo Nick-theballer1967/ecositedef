@@ -49,7 +49,10 @@
       </div>
       <div class="tile-grid two">
         <article class="tile">
-          <form class="contact-form" action="thank-you.html" method="get" data-ga-event="start_savings_review" data-ga-link-text="Savings review form submit" data-ga-section="contact_form">
+          <form class="contact-form" action="https://formsubmit.co/sales@ecoai.energy" method="post" data-ga-event="start_savings_review" data-ga-link-text="Savings review form submit" data-ga-section="contact_form">
+            <input type="hidden" name="_next" value="https://www.ecoai.energy/thank-you.html">
+            <input type="hidden" name="_subject" value="New EcoAI savings review enquiry">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-group">
               <label for="name">Name</label>
               <input id="name" name="name" type="text" required>
