@@ -135,10 +135,23 @@ main.main-compact {
 }
 
 .topbar .brand-mark {
-  width: 180px;
-  height: 180px;
+  width: 184px;
+  height: 88px;
   border-radius: 14px;
-  padding: 0.15rem;
+  padding: 0.35rem;
+  box-shadow: 0 8px 22px rgba(11, 61, 46, 0.1);
+}
+
+.topbar .brand-name {
+  color: var(--text);
+  font-size: 1.55rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.topbar .brand {
+  gap: 0.8rem;
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -1253,8 +1266,12 @@ textarea {
   }
 
   .topbar .brand-mark {
-    width: 130px;
-    height: 130px;
+    width: 138px;
+    height: 66px;
+  }
+
+  .topbar .brand-name {
+    font-size: 1.35rem;
   }
 
   .nav-links {
