@@ -142,13 +142,6 @@ main.main-compact {
   box-shadow: 0 8px 22px rgba(11, 61, 46, 0.1);
 }
 
-.topbar .brand-name {
-  color: var(--text);
-  font-size: 1.55rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
 .topbar .brand {
   gap: 0.8rem;
   flex-shrink: 0;
@@ -1268,10 +1261,6 @@ textarea {
   .topbar .brand-mark {
     width: 138px;
     height: 66px;
-  }
-
-  .topbar .brand-name {
-    font-size: 1.35rem;
   }
 
   .nav-links {
