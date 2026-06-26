@@ -7,6 +7,30 @@
   <meta name="description" content="EcoAI Insights shares practical explainers on HVAC optimisation, existing BMS infrastructure, comfort, engineering teams and building performance.">
   <link rel="canonical" href="https://www.ecoai.energy/insights.html">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .insight-image-slot {
+      aspect-ratio: auto;
+      min-height: 0;
+      padding: 0.75rem;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(11, 61, 46, 0.12);
+      border-radius: var(--radius);
+    }
+
+    .insight-card-image {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border: 0;
+      box-shadow: none;
+    }
+
+    @media (max-width: 720px) {
+      .insight-image-slot {
+        padding: 0.6rem;
+      }
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H8XWY26S1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -82,8 +106,8 @@
       </div>
       <div class="tile-grid two">
         <article class="tile">
-          <figure class="image-slot">
-            <img class="slot-image" src="assets/insights/before-heat-becomes-a-problem.png" alt="EcoAI insight explaining how predictive optimisation can act before heat becomes a comfort problem" loading="lazy">
+          <figure class="image-slot insight-image-slot">
+            <img class="slot-image insight-card-image" src="assets/insights/before-heat-becomes-a-problem.png" alt="EcoAI insight explaining how predictive optimisation can act before heat becomes a comfort problem" loading="lazy">
           </figure>
           <h3>Before heat becomes a problem</h3>
           <p>Forecast-led optimisation helps the building respond before conditions drift, using weather data, building behaviour and agreed comfort limits to reduce unnecessary HVAC energy.</p>
@@ -92,8 +116,8 @@
           </div>
         </article>
         <article class="tile">
-          <figure class="image-slot">
-            <img class="slot-image" src="assets/insights/supporting-skilled-engineers-every-15-minutes.png" alt="EcoAI insight explaining how optimisation supports skilled engineers every 15 minutes" loading="lazy">
+          <figure class="image-slot insight-image-slot">
+            <img class="slot-image insight-card-image" src="assets/insights/supporting-skilled-engineers-every-15-minutes.png" alt="EcoAI insight explaining how optimisation supports skilled engineers every 15 minutes" loading="lazy">
           </figure>
           <h3>Supporting skilled engineers every 15 minutes</h3>
           <p>EcoAI does not replace engineers, FM teams or BMS contractors. It supports them by adding a continuous optimisation layer that helps existing systems run more efficiently.</p>
@@ -102,8 +126,8 @@
           </div>
         </article>
         <article class="tile">
-          <figure class="image-slot">
-            <img class="slot-image" src="assets/insights/insight-to-action-results.png" alt="EcoAI insight explaining that insight is valuable but action delivers results" loading="lazy">
+          <figure class="image-slot insight-image-slot">
+            <img class="slot-image insight-card-image" src="assets/insights/insight-to-action-results.png" alt="EcoAI insight explaining that insight is valuable but action delivers results" loading="lazy">
           </figure>
           <h3>Insight is valuable. Action delivers the results.</h3>
           <p>Building data is useful, but savings are only delivered when insight becomes controlled action through the existing BMS.</p>
@@ -112,8 +136,8 @@
           </div>
         </article>
         <article class="tile">
-          <figure class="image-slot">
-            <img class="slot-image" src="assets/insights/measured-performance.png" alt="EcoAI insight showing measured performance and verified HVAC optimisation results" loading="lazy">
+          <figure class="image-slot insight-image-slot">
+            <img class="slot-image insight-card-image" src="assets/insights/measured-performance.png" alt="EcoAI insight showing measured performance and verified HVAC optimisation results" loading="lazy">
           </figure>
           <h3>Measured performance matters</h3>
           <p>EcoAI focuses on measurable outcomes, using reporting and baseline comparison to show energy, comfort and carbon impact clearly.</p>
