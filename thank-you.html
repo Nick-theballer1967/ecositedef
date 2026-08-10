@@ -14,6 +14,15 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-7H8XWY26S1');
+    try {
+  if (sessionStorage.getItem('ecoai_lead_pending') === '1') {
+    gtag('event', 'generate_lead', {
+      lead_source: 'building_review_form'
+    });
+
+    sessionStorage.removeItem('ecoai_lead_pending');
+  }
+} catch (e) {}
   </script>
 </head>
 <body>
