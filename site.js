@@ -19,19 +19,20 @@
     });
   });
 
- document.addEventListener('submit', function (event) {
-  var form = event.target;
+  document.addEventListener('submit', function (event) {
+    var form = event.target;
 
-  if (!form.matches('.contact-form')) {
-    return;
-  }
+    if (!form.matches('.contact-form')) {
+      return;
+    }
 
-  try {
-    sessionStorage.setItem('ecoai_lead_pending', '1');
-  } catch (e) {}
+    try {
+      sessionStorage.setItem('ecoai_lead_pending', '1');
+    } catch (e) {}
 
-  trackEvent('lead_form_submit_attempt', {
-    page_location: window.location.pathname,
-    section_name: 'contact_form'
+    trackEvent('lead_form_submit_attempt', {
+      page_location: window.location.pathname,
+      section_name: 'contact_form'
+    });
   });
-});
+})();
