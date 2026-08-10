@@ -7,7 +7,7 @@
   }
 
   document.addEventListener('click', function (event) {
-    var link = event.target.closest('[data-ga-event]');
+    var link = event.target.closest('a[data-ga-event], button[data-ga-event]');
     if (!link) {
       return;
     }
@@ -19,16 +19,19 @@
     });
   });
 
-  document.addEventListener('submit', function (event) {
-    var form = event.target;
-    if (!form.matches('[data-ga-event]')) {
-      return;
-    }
+ document.addEventListener('submit', function (event) {
+  var form = event.target;
 
-    trackEvent(form.dataset.gaEvent, {
-      page_location: window.location.pathname,
-      link_text: form.dataset.gaLinkText || 'Form submission',
-      section_name: form.dataset.gaSection || 'form'
-    });
+  if (!form.matches('.contact-form')) {
+    return;
+  }
+
+  try {
+    sessionStorage.setItem('ecoai_lead_pending', '1');
+  } catch (e) {}
+
+  trackEvent('lead_form_submit_attempt', {
+    page_location: window.location.pathname,
+    section_name: 'contact_form'
   });
-})();
+});
