@@ -12,6 +12,24 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    window._hsp = window._hsp || [];
+    window._hsp.push(['addPrivacyConsentListener', function(consent) {
+      var categories = consent && consent.categories ? consent.categories : {};
+      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
+      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      gtag('consent', 'update', {
+        analytics_storage: analyticsGranted,
+        ad_storage: adsGranted,
+        ad_user_data: adsGranted,
+        ad_personalization: adsGranted
+      });
+    }]);
     gtag('js', new Date());
     gtag('config', 'G-7H8XWY26S1');
     try {
