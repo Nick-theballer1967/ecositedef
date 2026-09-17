@@ -7,6 +7,67 @@
   <meta name="description" content="Review EcoAI proof, including savings evidence, case study summaries, and supporting documentation for measurable HVAC optimisation outcomes.">
   <link rel="canonical" href="https://www.ecoai.energy/proof.html">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .featured-case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .main-compact .image-slot.hero-compact {
+      width: 100%;
+    }
+
+    .featured-case {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .featured-case .section-cta {
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .case-sector {
+      color: var(--accent-strong);
+      font-weight: 800;
+      margin: 0 0 0.9rem;
+    }
+
+    .case-supporting-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin: 0.25rem 0 1rem;
+    }
+
+    .additional-examples {
+      margin-top: 1.4rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid rgba(11, 61, 46, 0.12);
+    }
+
+    .additional-examples .section-header {
+      margin-bottom: 1rem;
+    }
+
+    .additional-examples .tile {
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    @media (max-width: 760px) {
+      .featured-case-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .main-compact .image-slot.hero-compact {
+        max-width: calc(100vw - 3rem);
+      }
+    }
+  </style>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H8XWY26S1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -56,8 +117,8 @@
       <div class="hero-grid">
         <div class="hero-copy">
           <h1 id="proof-hero-title">Proof that optimisation is delivering results</h1>
-          <p class="lede">myCoreAI continuously optimises HVAC every 15 minutes using live building behaviour, occupancy patterns and weather conditions, typically delivering 20–35% energy savings without the need for manual intervention.</p>
-          <p>Trusted across <strong>1,500+ buildings globally</strong>, EcoAI provides transparent, auditable evidence so building teams can evaluate real outcomes with confidence.</p>
+          <p class="lede">myCoreAI continuously optimises HVAC every 15 minutes using live building behaviour, occupancy patterns and weather conditions, typically reducing HVAC electricity consumption by 20–35% without the need for manual intervention.</p>
+          <p>Trusted across <strong>around 2,000 buildings in 13 countries</strong>, EcoAI provides transparent, auditable evidence so building teams can evaluate real outcomes with confidence.</p>
           <div class="cta-group">
             <a class="btn secondary" href="economics.html" data-ga-event="explore_economics" data-ga-link-text="Explore economics" data-ga-section="proof_hero">Explore economics</a>
             <a class="btn ghost" href="how-it-works.html" data-ga-event="read_how_it_works" data-ga-link-text="Read how it works" data-ga-section="proof_hero">Read how it works</a>
@@ -93,40 +154,59 @@
         <p class="eyebrow">Case study summaries</p>
         <h2 id="proof-cases-title">Live-building outcomes</h2>
       </div>
-      <div class="tile-grid two">
-        <article class="tile">
+      <div class="featured-case-grid">
+        <article class="tile featured-case">
           <h3>University of St Andrews — Scottish Oceans Institute</h3>
+          <p class="case-sector">University / Higher Education</p>
           <ul class="bullet-list">
             <li>21.1% HVAC electricity reduction</li>
             <li>9.2% heat reduction</li>
             <li>158 MWh measured energy saving</li>
-            <li>29.3 tCO2e operational carbon reduction</li>
-            <li>Approx. £10.4k net benefit after subscription</li>
           </ul>
           <div class="section-cta">
-            <a class="btn text" href="/case-studies/st-andrews.html" data-ga-event="see_proof" data-ga-link-text="View the St Andrews case study" data-ga-section="case_study_summaries">View the St Andrews case study</a>
+            <a class="btn text" href="/case-studies/st-andrews.html" data-ga-event="see_proof" data-ga-link-text="View case study" data-ga-section="case_study_summaries_st_andrews">View case study</a>
           </div>
         </article>
-        <article class="tile">
-          <h3>Multi-let office optimisation</h3>
+        <article class="tile featured-case">
+          <h3>Local Government Civic Office</h3>
+          <p class="case-sector">Local Government / Public Sector</p>
           <ul class="bullet-list">
-            <li>14,500 m² multi-let office building</li>
-            <li>Electricity savings: 15.4%</li>
-            <li>Gas savings: 29%</li>
-            <li>Energy savings: 710 MWh</li>
-            <li>Cost savings: £68,943</li>
+            <li>138 MWh first-year energy reduction</li>
+            <li>£37.5k calculated first-year net saving</li>
+            <li>8,500 m² civic office</li>
           </ul>
+          <p class="case-supporting-note">Against the expected post-decarbonisation energy profile</p>
+          <div class="section-cta">
+            <a class="btn text" href="/case-studies/local-government.html" data-ga-event="see_proof" data-ga-link-text="View case study" data-ga-section="case_study_summaries_local_government">View case study</a>
+          </div>
         </article>
-        <article class="tile">
-          <h3>Commercial office retrofit</h3>
-          <ul class="bullet-list">
-            <li>5,600 m² commercial office</li>
-            <li>Electricity savings: 15.1%</li>
-            <li>Gas savings: 45.4%</li>
-            <li>Energy savings: 532 MWh</li>
-            <li>Cost savings: £44,972</li>
-          </ul>
-        </article>
+      </div>
+      <div class="additional-examples">
+        <div class="section-header">
+          <p class="eyebrow">Additional performance examples</p>
+        </div>
+        <div class="tile-grid two">
+          <article class="tile">
+            <h3>Multi-let office optimisation</h3>
+            <ul class="bullet-list">
+              <li>14,500 m² multi-let office building</li>
+              <li>Electricity savings: 15.4%</li>
+              <li>Gas savings: 29%</li>
+              <li>Energy savings: 710 MWh</li>
+              <li>Cost savings: £68,943</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3>Commercial office retrofit</h3>
+            <ul class="bullet-list">
+              <li>5,600 m² commercial office</li>
+              <li>Electricity savings: 15.1%</li>
+              <li>Gas savings: 45.4%</li>
+              <li>Energy savings: 532 MWh</li>
+              <li>Cost savings: £44,972</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
