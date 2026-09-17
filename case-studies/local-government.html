@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Government HVAC optimisation case study | EcoAI</title>
+  <meta name="description" content="See how EcoAI HVAC optimisation delivered a 138 MWh first-year energy reduction and £37.5k calculated net saving at an 8,500 m² UK civic office alongside wider decarbonisation measures.">
+  <meta property="og:title" content="Local Government HVAC optimisation case study | EcoAI">
+  <meta property="og:description" content="EcoAI HVAC optimisation delivered a 138 MWh first-year energy reduction and £37.5k calculated net saving at an 8,500 m² UK civic office alongside wider decarbonisation measures.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.ecoai.energy/case-studies/local-government.html">
+  <link rel="canonical" href="https://www.ecoai.energy/case-studies/local-government.html">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .case-study-page {
+      gap: 4rem;
+    }
+
+    .case-hero {
+      max-width: var(--max-width);
+      width: 100%;
+      padding: clamp(1.5rem, 3vw, 2.6rem);
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(11, 61, 46, 0.96), rgba(16, 96, 74, 0.9));
+      color: #f7fff9;
+      box-shadow: 0 24px 52px rgba(11, 61, 46, 0.24);
+      border: 1px solid rgba(31, 174, 138, 0.24);
+    }
+
+    .case-hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+      gap: clamp(1.4rem, 3vw, 2.4rem);
+      align-items: center;
+    }
+
+    .case-hero .eyebrow,
+    .case-hero h1 {
+      color: #f7fff9;
+    }
+
+    .case-hero h1 {
+      margin: 0.45rem 0 1rem;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.08;
+      max-width: 15ch;
+    }
+
+    .case-hero .lede {
+      color: rgba(247, 255, 249, 0.86);
+      font-size: 1.08rem;
+      max-width: 68ch;
+    }
+
+    .case-context {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin: 1.2rem 0 1.5rem;
+      padding: 0;
+      list-style: none;
+    }
+
+    .case-context li {
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.08);
+      color: #eafff5;
+      border-radius: 999px;
+      padding: 0.42rem 0.72rem;
+      font-weight: 700;
+      font-size: 0.86rem;
+    }
+
+    .case-hero-card {
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      padding: 1.4rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .case-hero-card strong {
+      display: block;
+      font-size: clamp(2.1rem, 5vw, 3.6rem);
+      line-height: 1;
+      color: #b8ef49;
+    }
+
+    .case-hero-card span {
+      color: rgba(247, 255, 249, 0.86);
+      font-weight: 700;
+    }
+
+    .case-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .case-metric {
+      background: var(--panel);
+      border: 1px solid rgba(11, 61, 46, 0.1);
+      border-radius: 16px;
+      padding: 1.25rem;
+      box-shadow: 0 14px 30px rgba(11, 61, 46, 0.1);
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .case-metric strong {
+      display: block;
+      color: var(--accent-strong);
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
+      line-height: 1.05;
+    }
+
+    .case-metric span {
+      color: var(--muted);
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .case-panel {
+      width: 100%;
+      min-width: 0;
+      padding: clamp(1.4rem, 2.8vw, 2.4rem);
+      border-radius: 22px;
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.98), rgba(31, 174, 138, 0.07));
+      border: 1px solid rgba(11, 61, 46, 0.1);
+      box-shadow: 0 18px 40px rgba(11, 61, 46, 0.1);
+    }
+
+    .case-panel h2,
+    .case-panel h3 {
+      margin-top: 0;
+    }
+
+    .case-copy-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: clamp(1.4rem, 3vw, 2.4rem);
+      align-items: start;
+    }
+
+    .results-table-wrap {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1px solid rgba(11, 61, 46, 0.12);
+      background: #ffffff;
+    }
+
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+
+    .results-table th,
+    .results-table td {
+      padding: 0.95rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(11, 61, 46, 0.1);
+      vertical-align: top;
+    }
+
+    .results-table th {
+      background: rgba(11, 61, 46, 0.06);
+      color: var(--accent-strong);
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .results-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .highlight-panel {
+      background: linear-gradient(135deg, rgba(11, 61, 46, 0.96), rgba(16, 96, 74, 0.9));
+      color: #f7fff9;
+    }
+
+    .highlight-panel h2,
+    .highlight-panel .eyebrow {
+      color: #f7fff9;
+    }
+
+    .highlight-panel p {
+      color: rgba(247, 255, 249, 0.88);
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .insight-card {
+      background: #ffffff;
+      border: 1px solid rgba(11, 61, 46, 0.1);
+      border-radius: 16px;
+      padding: 1.4rem;
+      box-shadow: 0 12px 28px rgba(11, 61, 46, 0.08);
+    }
+
+    .insight-card h3 {
+      margin-bottom: 0.45rem;
+      color: var(--accent-strong);
+    }
+
+    .verification-note {
+      border-left: 5px solid var(--accent);
+      background: rgba(31, 174, 138, 0.08);
+    }
+
+    @media (max-width: 960px) {
+      .case-hero-grid,
+      .case-copy-grid,
+      .insight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .case-study-page {
+        gap: 2.75rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .case-hero,
+      .case-panel {
+        border-radius: 18px;
+        padding: 1.15rem;
+      }
+
+      .case-hero h1 {
+        max-width: none;
+      }
+
+      .case-metric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .case-metric {
+        min-height: 120px;
+      }
+
+      .case-context li {
+        width: 100%;
+      }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H8XWY26S1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    window._hsp = window._hsp || [];
+    window._hsp.push(['addPrivacyConsentListener', function(consent) {
+      var categories = consent && consent.categories ? consent.categories : {};
+      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
+      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      gtag('consent', 'update', {
+        analytics_storage: analyticsGranted,
+        ad_storage: adsGranted,
+        ad_user_data: adsGranted,
+        ad_personalization: adsGranted
+      });
+    }]);
+    gtag('js', new Date());
+    gtag('config', 'G-7H8XWY26S1');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="../index.html" aria-label="EcoAI homepage">
+        <div class="brand-mark"><img class="brand-logo" src="../assets/logo.png" alt="EcoAI logo"></div>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../how-it-works.html">How it works</a></li>
+          <li><a href="../sectors.html">Sectors</a></li>
+          <li><a href="../economics.html">Economics</a></li>
+          <li><a href="../proof.html">Proof</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="case-study-page">
+    <section class="case-hero" aria-labelledby="case-hero-title">
+      <div class="case-hero-grid">
+        <div>
+          <p class="eyebrow">UK Local Government / Civic Office</p>
+          <h1 id="case-hero-title">Local Government Civic Office: HVAC optimisation alongside wider decarbonisation</h1>
+          <p class="lede">EcoAI optimisation was integrated with the existing Building Management System at an 8,500 m² UK civic office, improving HVAC operation while working alongside a wider building decarbonisation programme.</p>
+          <ul class="case-context" aria-label="Case study context">
+            <li>8,500 m² civic office</li>
+            <li>Existing BMS retained</li>
+            <li>Wider decarbonisation programme</li>
+            <li>First-year performance analysis</li>
+          </ul>
+          <div class="cta-group">
+            <a class="btn primary" href="/assets/ecoai-local-government-case-study.pdf" target="_blank" rel="noopener" data-ga-event="download_case_study" data-ga-link-text="Download the full case study" data-ga-section="local_government_hero">Download the full case study</a>
+            <a class="btn ghost" href="/contact.html" data-ga-event="start_savings_review" data-ga-link-text="Discuss a similar project" data-ga-section="local_government_hero">Discuss a similar project</a>
+          </div>
+        </div>
+        <aside class="case-hero-card" aria-label="Headline result">
+          <div>
+            <strong>138 MWh</strong>
+            <span>first-year net energy reduction against expected consumption</span>
+          </div>
+          <div>
+            <strong>£37.5k</strong>
+            <span>calculated first-year net saving</span>
+          </div>
+          <p>Performance was assessed against the expected post-decarbonisation energy profile.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="key-results-title">
+      <div class="section-header">
+        <p class="eyebrow">Key results</p>
+        <h2 id="key-results-title">First-year performance against the adjusted expected profile</h2>
+      </div>
+      <div class="case-metric-grid">
+        <article class="case-metric"><strong>17.9%</strong><span>electricity below expected consumption</span></article>
+        <article class="case-metric"><strong>222,278 kWh</strong><span>electricity below the expected first-year profile</span></article>
+        <article class="case-metric"><strong>8.0%</strong><span>total energy below expected consumption</span></article>
+        <article class="case-metric"><strong>137,701 kWh</strong><span>net energy reduction across electricity and gas</span></article>
+        <article class="case-metric"><strong>£37,474.87</strong><span>calculated first-year net saving</span></article>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="summary-title">
+      <div class="case-copy-grid">
+        <div>
+          <p class="eyebrow">Executive summary</p>
+          <h2 id="summary-title">Operational optimisation alongside estate decarbonisation</h2>
+        </div>
+        <div>
+          <p>A UK local authority was implementing a wider building decarbonisation programme across its estate, including heat pumps, solar generation, battery storage and Building Management System improvements.</p>
+          <p>At an 8,500 m² civic office, EcoAI's optimisation technology was integrated with the existing BMS to improve HVAC operation while retaining the building's installed controls infrastructure.</p>
+          <p>The project demonstrates how active HVAC/BMS optimisation can work alongside wider decarbonisation investment without requiring the existing controls platform to be replaced.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="baseline-title">
+      <div class="case-copy-grid">
+        <div>
+          <p class="eyebrow">Assessment approach</p>
+          <h2 id="baseline-title">Why the expected post-project profile mattered</h2>
+        </div>
+        <div>
+          <p>The challenge was not simply to compare one year with another. The wider carbon-reduction measures were expected to materially change the building's energy profile, with electricity consumption forecast to increase by 35% and gas consumption forecast to reduce by 70%.</p>
+          <p>Performance was therefore assessed against the expected post-project/post-decarbonisation profile. Across the first 12 months, electricity consumption was 222,278 kWh below expected. Gas consumption was 84,577 kWh above the expected level, giving a net energy reduction of 137,701 kWh.</p>
+          <p>At the energy rates used in the first-year analysis, this equated to a calculated net saving of £37,474.87.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="results-title">
+      <div class="section-header">
+        <p class="eyebrow">First-year results</p>
+        <h2 id="results-title">Expected vs actual post-integration performance</h2>
+        <p class="section-intro">The wider project anticipated a 35% increase in electricity use and a 70% reduction in gas use as other carbon-reduction measures were implemented, so a simple historic year-on-year comparison would have been potentially misleading.</p>
+      </div>
+      <div class="results-table-wrap">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>Measure</th>
+              <th>Reference year</th>
+              <th>Expected</th>
+              <th>Actual/post integration</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Electricity</strong></td>
+              <td>920,981 kWh</td>
+              <td>1,243,324 kWh</td>
+              <td>1,021,046 kWh</td>
+              <td>222,278 kWh reduction, 17.9% below expected</td>
+            </tr>
+            <tr>
+              <td><strong>Gas / heating</strong></td>
+              <td>1,564,930 kWh</td>
+              <td>469,479 kWh</td>
+              <td>554,056 kWh</td>
+              <td>+84,577 kWh variance against expected</td>
+            </tr>
+            <tr>
+              <td><strong>Net energy position</strong></td>
+              <td colspan="3">Reduction against expected consumption</td>
+              <td>137,701 kWh</td>
+            </tr>
+            <tr>
+              <td><strong>Electricity cost</strong></td>
+              <td>Not applicable</td>
+              <td>£246,802.80</td>
+              <td>£202,680.07</td>
+              <td>£44,122.73 saving</td>
+            </tr>
+            <tr>
+              <td><strong>Gas / heating cost</strong></td>
+              <td>Not applicable</td>
+              <td>£36,901.65</td>
+              <td>£43,549.51</td>
+              <td>+£6,647.86 variance</td>
+            </tr>
+            <tr>
+              <td><strong>Calculated net saving</strong></td>
+              <td colspan="3">Expected energy costs compared with actual energy costs used in the first-year analysis</td>
+              <td>£37,474.87</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section case-panel highlight-panel" aria-labelledby="profile-title">
+      <p class="eyebrow">Demand shift</p>
+      <h2 id="profile-title">Optimisation measured against the future operating profile</h2>
+      <p>Heat electrification and other carbon-reduction projects can shift demand between fuels. Optimisation performance therefore needs to be considered against the expected future operating profile rather than only a historic baseline.</p>
+      <p>EcoAI's contribution was evaluated against the adjusted expected profile to separate the optimisation effect from the wider programme as far as the available data allowed.</p>
+    </section>
+
+    <section class="section case-panel" aria-labelledby="what-it-shows-title">
+      <div class="section-header">
+        <p class="eyebrow">What the project shows</p>
+        <h2 id="what-it-shows-title">Three practical lessons for decarbonising estates</h2>
+      </div>
+      <div class="insight-grid">
+        <article class="insight-card">
+          <h3>Existing BMS</h3>
+          <p>Optimisation can be introduced through existing controls infrastructure rather than requiring wholesale replacement.</p>
+        </article>
+        <article class="insight-card">
+          <h3>Wider programme</h3>
+          <p>Operational optimisation can complement heat pumps, on-site generation, storage and other decarbonisation measures.</p>
+        </article>
+        <article class="insight-card">
+          <h3>Measured value</h3>
+          <p>The business case can be evaluated against an adjusted expected profile when other projects are changing the building's energy mix.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section case-panel verification-note" aria-labelledby="qualification-title">
+      <p class="eyebrow">Qualification</p>
+      <h2 id="qualification-title">First-year project analysis</h2>
+      <p>The figures reproduce the first-year project analysis. The calculated £37.5k saving is the difference between the expected and actual energy costs used in that analysis. The 137,701 kWh net energy reduction is rounded to 138 MWh in headline communications.</p>
+    </section>
+
+    <section class="section contact section-contact-decisive" aria-labelledby="case-cta-title">
+      <div class="section-header">
+        <p class="eyebrow">Next step</p>
+        <h2 id="case-cta-title">Could your estate deliver similar savings?</h2>
+        <p class="section-intro">EcoAI helps existing buildings reduce HVAC energy consumption, operational carbon and operating cost by optimising the infrastructure already in place.</p>
+      </div>
+      <div class="section-cta">
+        <a class="btn primary" href="/assets/ecoai-local-government-case-study.pdf" target="_blank" rel="noopener" data-ga-event="download_case_study" data-ga-link-text="Download the full case study" data-ga-section="local_government_bottom">Download the full case study</a>
+        <a class="btn secondary" href="/contact.html" data-ga-event="start_savings_review" data-ga-link-text="Discuss a similar project" data-ga-section="local_government_bottom">Discuss a similar project</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="brand">
+        <div class="brand-mark"><img class="brand-logo" src="../assets/logo.png" alt="EcoAI logo"></div>
+        <span class="brand-name" aria-label="EcoAI">EcoAI</span>
+      </div>
+      <div class="footer-text">© EcoAI Technologies Ltd. Delivering AI-driven optimisation for sustainable buildings.</div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../building-review.html">Building review</a>
+        <a href="../how-it-works.html">How it works</a>
+        <a href="../sectors.html">Sectors</a>
+        <a href="../economics.html">Economics</a>
+        <a href="../proof.html">Proof</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="../site.js"></script>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139505431.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+</html>
