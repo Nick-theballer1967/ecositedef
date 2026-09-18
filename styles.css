@@ -136,7 +136,7 @@ main.main-compact {
 
 .topbar .brand-mark {
   width: 184px;
-  height: 88px;
+  height: 72px;
   border-radius: 14px;
   padding: 0.35rem;
   box-shadow: 0 8px 22px rgba(11, 61, 46, 0.1);
@@ -1283,7 +1283,7 @@ textarea {
 
   .topbar .brand-mark {
     width: 138px;
-    height: 66px;
+    height: 54px;
   }
 
   .hero-brand-lockup {
