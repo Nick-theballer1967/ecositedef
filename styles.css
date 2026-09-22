@@ -1254,6 +1254,10 @@ textarea {
 }
 
 @media (max-width: 720px) {
+  body.has-hubspot-widget .footer-inner {
+    padding-bottom: calc(var(--hubspot-mobile-clearance, 7rem) + env(safe-area-inset-bottom));
+  }
+
   .proof-brief-shell {
     grid-template-columns: 1fr;
     padding: 1.5rem;
