@@ -34,7 +34,7 @@ jobs:
           cat .pdf-staging/st-*.b64 | base64 -d > assets/st-andrews-case-study.pdf
           cat .pdf-staging/lg-*.b64 | base64 -d > assets/ecoai-local-government-case-study.pdf
 
-          echo "648da932da60d1da0404e43da2d79f5405f3e85cfc6a6939886c2a4a033581ed  assets/st-andrews-case-study.pdf" | sha256sum -c -
+          echo "813f6b04c343c732453713575903ce03d10c6e1c7dc5adc5325b2dd8ae6ebc39  assets/st-andrews-case-study.pdf" | sha256sum -c -
           echo "c01c04eb804e74a6e394cc949432f2954b800276e48e45c390a499d6a939eb33  assets/ecoai-local-government-case-study.pdf" | sha256sum -c -
 
           rm -rf .pdf-staging
