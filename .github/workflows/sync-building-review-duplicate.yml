@@ -1,0 +1,28 @@
+name: Sync Building Review duplicate
+
+on:
+  push:
+    paths:
+      - '.github/workflows/sync-building-review-duplicate.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sync PDF
+        run: cp assets/docs/ecoai-building-review-and-qualification-guide.pdf assets/ecoai-building-review-and-qualification-guide.pdf
+      - name: Commit sync
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/ecoai-building-review-and-qualification-guide.pdf
+          if git diff --cached --quiet; then
+            echo "Already synced."
+          else
+            git commit -m "Sync Building Review website PDF"
+            git push
+          fi
