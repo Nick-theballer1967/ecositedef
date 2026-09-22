@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoAI | Proof and case studies</title>
-  <meta name="description" content="Review EcoAI proof, including savings evidence, case study summaries, and supporting documentation for measurable HVAC optimisation outcomes.">
+  <meta name="description" content="Review EcoAI proof, including measured savings, client perspectives and case studies across higher education, local government, commercial, retail and hospitality buildings.">
   <link rel="canonical" href="https://www.ecoai.energy/proof.html">
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -43,23 +43,107 @@
       margin: 0.25rem 0 1rem;
     }
 
-    .additional-examples {
-      margin-top: 1.4rem;
-      padding-top: 1.4rem;
+    .supporting-evidence {
+      margin-top: 1.8rem;
+      padding-top: 1.6rem;
       border-top: 1px solid rgba(11, 61, 46, 0.12);
     }
 
-    .additional-examples .section-header {
-      margin-bottom: 1rem;
+    .supporting-evidence .section-header {
+      margin-bottom: 1.2rem;
+      max-width: 78ch;
     }
 
-    .additional-examples .tile {
+    .supporting-case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .supporting-case {
       box-shadow: none;
-      background: rgba(255, 255, 255, 0.78);
+      background: rgba(255, 255, 255, 0.82);
+      border-color: rgba(11, 61, 46, 0.1);
+    }
+
+    .supporting-case .section-cta {
+      margin-top: auto;
+      padding-top: 0.8rem;
+    }
+
+    .case-context {
+      color: var(--muted);
+      margin: 0.2rem 0 0.7rem;
+      line-height: 1.6;
+    }
+
+    .case-reference-note {
+      margin: 0 0 0.4rem;
+      color: var(--accent-strong);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .client-voice {
+      margin: 1.5rem 0;
+      padding: clamp(1.4rem, 2.6vw, 2rem);
+      border-radius: 20px;
+      border: 1px solid rgba(31, 174, 138, 0.2);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(232, 250, 243, 0.92));
+      box-shadow: 0 14px 32px rgba(11, 61, 46, 0.1);
+    }
+
+    .client-voice .eyebrow {
+      margin-bottom: 0.55rem;
+    }
+
+    .client-voice blockquote {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      border-radius: 0;
+      color: var(--accent-strong);
+      font-size: clamp(1.08rem, 1.6vw, 1.28rem);
+      line-height: 1.6;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .client-voice footer {
+      margin-top: 1rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .client-voice cite {
+      display: block;
+      color: var(--text);
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .client-voice .voice-role {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.93rem;
+    }
+
+    .client-voice--university {
+      border-left: 5px solid var(--accent);
+    }
+
+    .client-voice--public {
+      border-left: 5px solid var(--highlight);
     }
 
     @media (max-width: 760px) {
-      .featured-case-grid {
+      .featured-case-grid,
+      .supporting-case-grid {
         grid-template-columns: 1fr;
       }
 
@@ -181,32 +265,106 @@
           </div>
         </article>
       </div>
-      <div class="additional-examples">
+      <aside class="client-voice client-voice--university" aria-label="University of St Andrews client perspective">
+        <p class="eyebrow">University perspective</p>
+        <blockquote>
+          “It was implemented at the Scottish Oceans Institute to assess its impact on performance, focusing on strengthening the existing Desigo CC system rather than replacing it. Since implementation, the results demonstrate measurable improvements in energy use and internal conditions, reinforcing the value of using AI to enhance an existing BMS rather than replace it.”
+        </blockquote>
+        <footer>
+          <cite>Amanda Cook</cite>
+          <span class="voice-role">BMS Manager, University of St Andrews</span>
+        </footer>
+      </aside>
+
+      <div class="supporting-evidence">
         <div class="section-header">
-          <p class="eyebrow">Additional performance examples</p>
+          <p class="eyebrow">Further sector evidence</p>
+          <h2>Successful optimisation across different building types</h2>
+          <p class="section-intro">Additional projects demonstrate the breadth of the optimisation approach across commercial, corporate, retail and hospitality environments, while working through existing controls infrastructure.</p>
         </div>
-        <div class="tile-grid two">
-          <article class="tile">
-            <h3>Multi-let office optimisation</h3>
+
+        <div class="supporting-case-grid">
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Retail / Mixed-Use</p>
+            <h3>G City Europe — Atrium Flora</h3>
+            <p class="case-context">A 39,800 m² retail and office property with different indoor-climate requirements across common and tenant areas.</p>
             <ul class="bullet-list">
-              <li>14,500 m² multi-let office building</li>
-              <li>Electricity savings: 15.4%</li>
-              <li>Gas savings: 29%</li>
-              <li>Energy savings: 710 MWh</li>
-              <li>Cost savings: £68,943</li>
+              <li>25% electricity saving in common areas</li>
+              <li>11% electricity saving in tenant areas</li>
+              <li>15% gas saving</li>
             </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-g-city-atrium-flora-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download G City case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
           </article>
-          <article class="tile">
-            <h3>Commercial office retrofit</h3>
+
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Hospitality / Mixed-Use</p>
+            <h3>European Hotel &amp; Office Building</h3>
+            <p class="case-context">A 25,553 m² hotel and office building combining guest-comfort requirements with office operation.</p>
             <ul class="bullet-list">
-              <li>5,600 m² commercial office</li>
-              <li>Electricity savings: 15.1%</li>
-              <li>Gas savings: 45.4%</li>
-              <li>Energy savings: 532 MWh</li>
-              <li>Cost savings: £44,972</li>
+              <li>16.2% total building energy saving</li>
+              <li>€30.6k reported annual saving</li>
+              <li>16% more even 24-hour indoor climate</li>
             </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-european-hospitality-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download hospitality case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
           </article>
         </div>
+
+        <aside class="client-voice" aria-label="G City Europe client perspective">
+          <p class="eyebrow">Client perspective</p>
+          <blockquote>
+            “We have achieved impressive savings in energy and natural gas consumption, while the indoor comfort in the building has not been compromised. And this building is complex since we have two different types of tenants, both office and retail, who don't have the same requirements in terms of indoor climate, but myCoreAI handles that very well.”
+          </blockquote>
+          <footer>
+            <cite>Ondrej Jirak</cite>
+            <span class="voice-role">COO (CZ/SK), G City Europe</span>
+          </footer>
+        </aside>
+
+        <div class="supporting-case-grid">
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Established commercial reference</p>
+            <h3>One Trinity Gardens</h3>
+            <p class="case-context">A successful multi-let office deployment demonstrating measurable electricity and gas savings through the existing BMS.</p>
+            <ul class="bullet-list">
+              <li>15.4% electricity saving</li>
+              <li>29% gas saving</li>
+              <li>710 MWh energy saved</li>
+            </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-one-trinity-gardens-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download One Trinity Gardens case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
+          </article>
+
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Established corporate reference</p>
+            <h3>Calyx Nottingham</h3>
+            <p class="case-context">A corporate-office deployment showing sustained savings over two reporting years while leveraging the installed BMS.</p>
+            <ul class="bullet-list">
+              <li>23.5% electricity saving in year two</li>
+              <li>46.9% gas saving in year two</li>
+              <li>£104k total saving over two years</li>
+            </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-calyx-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download Calyx case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="client-voice" aria-label="Calyx client perspective">
+          <p class="eyebrow">Client perspective</p>
+          <blockquote>
+            “Having explored most of the conventional carbon reduction techniques across the portfolio, we knew the next initiative was going to need to be something quite special to make an impact. EcoAI answered that call and enabled us to leverage our existing BMS to deliver quite staggering results. The results in year 1 were great; the fact that the system has managed to automatically improve on those savings in year two is even better.”
+          </blockquote>
+          <footer>
+            <cite>Richard Cotterill MBA</cite>
+            <span class="voice-role">Former Senior Facilities Manager, Calyx</span>
+          </footer>
+        </aside>
+      </div>
       </div>
     </section>
 
@@ -243,6 +401,17 @@
         <a class="btn secondary" href="assets/docs/ecoai-how-hvac-energy-savings-are-delivered.pdf" target="_blank" rel="noopener" download data-ga-event="download_hvac_savings_explainer" data-ga-link-text="Download the HVAC savings explainer" data-ga-section="hvac_savings_delivered">Download the HVAC savings explainer</a>
       </div>
     </section>
+
+    <aside class="section client-voice client-voice--public" aria-label="UK Local Authority client perspective">
+      <p class="eyebrow">Local government perspective</p>
+      <blockquote>
+        “Having completed many of the easy wins including behavioural changes and capital investment, we have been on the lookout for innovative technologies particularly around a buildings BMS system which can be overlooked when it comes to energy savings. Together with the benefits to the occupants, EcoAI has the potential to save a significant amount of energy both across electricity and gas within a short payback.”
+      </blockquote>
+      <footer>
+        <cite>Energy Resource Manager</cite>
+        <span class="voice-role">UK Local Authority</span>
+      </footer>
+    </aside>
 
     <section class="section proof-support" aria-labelledby="proof-support-title">
       <div class="section-header">
