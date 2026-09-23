@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAI | Thank you</title>
+  <meta name="description" content="Thank you for your EcoAI building review enquiry. Your request has been received and our team will be in touch.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.ecoai.energy/thank-you.html">
+  <link rel="stylesheet" href="styles.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H8XWY26S1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    window._hsp = window._hsp || [];
+    window._hsp.push(['addPrivacyConsentListener', function(consent) {
+      var categories = consent && consent.categories ? consent.categories : {};
+      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
+      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      gtag('consent', 'update', {
+        analytics_storage: analyticsGranted,
+        ad_storage: adsGranted,
+        ad_user_data: adsGranted,
+        ad_personalization: adsGranted
+      });
+    }]);
+    gtag('js', new Date());
+    gtag('config', 'G-7H8XWY26S1');
+    try {
+  if (sessionStorage.getItem('ecoai_lead_pending') === '1') {
+    gtag('event', 'generate_lead', {
+      lead_source: 'building_review_form'
+    });
+
+    sessionStorage.removeItem('ecoai_lead_pending');
+  }
+} catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="EcoAI homepage"><div class="brand-mark"><img class="brand-logo" src="assets/logo-primary.png" alt="EcoAI logo"></div></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="economics.html">Economics</a></li>
+          <li><a href="proof.html">Proof</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main-compact">
+    <section class="hero" aria-labelledby="thank-you-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="thank-you-title">Thank you — we’ll be in touch</h1>
+          <p class="lede">Your building review enquiry has been received.</p>
+          <div class="cta-group">
+            <a class="btn ghost" href="index.html">Homepage</a>
+            <a class="btn ghost" href="proof.html" data-ga-event="see_proof" data-ga-link-text="See proof" data-ga-section="thank_you">Proof page</a>
+            <a class="btn ghost" href="how-it-works.html" data-ga-event="read_how_it_works" data-ga-link-text="Read how it works" data-ga-section="thank_you">How it works page</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="brand"><div class="brand-mark"><img class="brand-logo" src="assets/logo-primary.png" alt="EcoAI logo"></div></div>
+      <div class="footer-text">© 2026 EcoAI Technologies Ltd. HVAC optimisation for more efficient, sustainable buildings.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="building-review.html">Building review</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="economics.html">Economics</a>
+        <a href="proof.html">Proof</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139505431.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+</html>

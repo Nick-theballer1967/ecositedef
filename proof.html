@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAI | Proof and case studies</title>
+  <meta name="description" content="Review EcoAI proof, including measured savings, client perspectives and case studies across higher education, local government, commercial, retail and hospitality buildings.">
+  <link rel="canonical" href="https://www.ecoai.energy/proof.html">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .featured-case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .main-compact .image-slot.hero-compact {
+      width: 100%;
+    }
+
+    .featured-case {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .featured-case .section-cta {
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .case-sector {
+      color: var(--accent-strong);
+      font-weight: 800;
+      margin: 0 0 0.9rem;
+    }
+
+    .case-supporting-note {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin: 0.25rem 0 1rem;
+    }
+
+    .supporting-evidence {
+      margin-top: 1.8rem;
+      padding-top: 1.6rem;
+      border-top: 1px solid rgba(11, 61, 46, 0.12);
+    }
+
+    .supporting-evidence .section-header {
+      margin-bottom: 1.2rem;
+      max-width: 78ch;
+    }
+
+    .supporting-case-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .supporting-case {
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.82);
+      border-color: rgba(11, 61, 46, 0.1);
+    }
+
+    .supporting-case .section-cta {
+      margin-top: auto;
+      padding-top: 0.8rem;
+    }
+
+    .case-context {
+      color: var(--muted);
+      margin: 0.2rem 0 0.7rem;
+      line-height: 1.6;
+    }
+
+    .case-reference-note {
+      margin: 0 0 0.4rem;
+      color: var(--accent-strong);
+      font-size: 0.82rem;
+      font-weight: 750;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .client-voice {
+      margin: 1.5rem 0;
+      padding: clamp(1.4rem, 2.6vw, 2rem);
+      border-radius: 20px;
+      border: 1px solid rgba(31, 174, 138, 0.2);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(232, 250, 243, 0.92));
+      box-shadow: 0 14px 32px rgba(11, 61, 46, 0.1);
+    }
+
+    .client-voice .eyebrow {
+      margin-bottom: 0.55rem;
+    }
+
+    .client-voice blockquote {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      border-radius: 0;
+      color: var(--accent-strong);
+      font-size: clamp(1.08rem, 1.6vw, 1.28rem);
+      line-height: 1.6;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .client-voice footer {
+      margin-top: 1rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .client-voice cite {
+      display: block;
+      color: var(--text);
+      font-style: normal;
+      font-weight: 800;
+    }
+
+    .client-voice .voice-role {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.93rem;
+    }
+
+    .client-voice--university {
+      border-left: 5px solid var(--accent);
+    }
+
+    .client-voice--public {
+      border-left: 5px solid var(--highlight);
+    }
+
+    @media (max-width: 760px) {
+      .featured-case-grid,
+      .supporting-case-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .main-compact .image-slot.hero-compact {
+        max-width: calc(100vw - 3rem);
+      }
+    }
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7H8XWY26S1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      analytics_storage: 'denied',
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied'
+    });
+    window._hsp = window._hsp || [];
+    window._hsp.push(['addPrivacyConsentListener', function(consent) {
+      var categories = consent && consent.categories ? consent.categories : {};
+      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
+      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      gtag('consent', 'update', {
+        analytics_storage: analyticsGranted,
+        ad_storage: adsGranted,
+        ad_user_data: adsGranted,
+        ad_personalization: adsGranted
+      });
+    }]);
+    gtag('js', new Date());
+    gtag('config', 'G-7H8XWY26S1');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" aria-label="EcoAI homepage"><div class="brand-mark"><img class="brand-logo" src="assets/logo-primary.png" alt="EcoAI logo"></div></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-works.html">How it works</a></li>
+          <li><a href="sectors.html">Sectors</a></li>
+          <li><a href="economics.html">Economics</a></li>
+          <li><a href="proof.html" aria-current="page">Proof</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="main-compact">
+    <section class="hero" aria-labelledby="proof-hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 id="proof-hero-title">Proof that optimisation is delivering results</h1>
+          <p class="lede">myCoreAI continuously optimises HVAC every 15 minutes using live building behaviour, occupancy patterns and weather conditions, typically reducing HVAC electricity consumption by 20–35% without the need for manual intervention.</p>
+          <p>Trusted across <strong>around 2,000 buildings in 13 countries</strong>, EcoAI provides transparent, auditable evidence so building teams can evaluate real outcomes with confidence.</p>
+          <div class="cta-group">
+            <a class="btn secondary" href="economics.html" data-ga-event="explore_economics" data-ga-link-text="Explore economics" data-ga-section="proof_hero">Explore economics</a>
+            <a class="btn ghost" href="how-it-works.html" data-ga-event="read_how_it_works" data-ga-link-text="Read how it works" data-ga-section="proof_hero">Read how it works</a>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <figure class="image-slot hero-compact"><img class="slot-image" src="assets/proof-office-exterior.jpg" alt="Commercial office building exterior" loading="lazy"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof-focus" aria-labelledby="conditions-proof-title">
+      <div class="section-header proof-focus-header">
+        <p class="eyebrow">Measured performance example</p>
+        <h2 id="conditions-proof-title">Measured AI on vs AI off performance</h2>
+        <p class="section-intro">This monthly profile shows weather-normalised AI off and AI on performance for HVAC electricity and heat in a live occupied building. The gap between the lines shows the savings delivered by continuous EcoAI optimisation while normal building operation is maintained.</p>
+      </div>
+      <ul class="proof-preview-points proof-results-list">
+        <li>21.1% HVAC electricity reduction</li>
+        <li>9.2% heat reduction</li>
+        <li>158,114 kWh measured saving</li>
+        <li>Approx. £14.4k measured gross benefit</li>
+        <li>Approx. £10.4k net benefit after c£4k annual subscription</li>
+      </ul>
+      <figure class="proof-focus-chart" aria-labelledby="conditions-proof-caption">
+        <img class="proof-chart" src="assets/ecoai-measured-performance-example.png.png" alt="Measured AI on vs AI off building optimisation graph showing HVAC electricity and heat savings delivered by EcoAI." loading="lazy">
+        <figcaption id="conditions-proof-caption">Results shown are from a live occupied building over an April 2025 to April 2026 reporting period. Individual building results vary depending on plant, operating hours, controls strategy and existing performance.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="proof-cases-title">
+      <div class="section-header">
+        <p class="eyebrow">Case study summaries</p>
+        <h2 id="proof-cases-title">Live-building outcomes</h2>
+      </div>
+      <div class="featured-case-grid">
+        <article class="tile featured-case">
+          <h3>University of St Andrews — Scottish Oceans Institute</h3>
+          <p class="case-sector">University / Higher Education</p>
+          <ul class="bullet-list">
+            <li>21.1% HVAC electricity reduction</li>
+            <li>9.2% heat reduction</li>
+            <li>158 MWh measured energy saving</li>
+          </ul>
+          <div class="section-cta">
+            <a class="btn text" href="/case-studies/st-andrews.html" data-ga-event="see_proof" data-ga-link-text="View case study" data-ga-section="case_study_summaries_st_andrews">View case study</a>
+          </div>
+        </article>
+        <article class="tile featured-case">
+          <h3>Local Government Civic Office</h3>
+          <p class="case-sector">Local Government / Public Sector</p>
+          <ul class="bullet-list">
+            <li>138 MWh first-year energy reduction</li>
+            <li>£37.5k calculated first-year net saving</li>
+            <li>8,500 m² civic office</li>
+          </ul>
+          <p class="case-supporting-note">Against the expected post-decarbonisation energy profile</p>
+          <div class="section-cta">
+            <a class="btn text" href="/case-studies/local-government.html" data-ga-event="see_proof" data-ga-link-text="View case study" data-ga-section="case_study_summaries_local_government">View case study</a>
+          </div>
+        </article>
+      </div>
+      <aside class="client-voice client-voice--university" aria-label="University of St Andrews client perspective">
+        <p class="eyebrow">University perspective</p>
+        <blockquote>
+          “It was implemented at the Scottish Oceans Institute to assess its impact on performance, focusing on strengthening the existing Desigo CC system rather than replacing it. Since implementation, the results demonstrate measurable improvements in energy use and internal conditions, reinforcing the value of using AI to enhance an existing BMS rather than replace it.”
+        </blockquote>
+        <footer>
+          <cite>Amanda Cook</cite>
+          <span class="voice-role">BMS Manager, University of St Andrews</span>
+        </footer>
+      </aside>
+
+      <div class="supporting-evidence">
+        <div class="section-header">
+          <p class="eyebrow">Further sector evidence</p>
+          <h2>Successful optimisation across different building types</h2>
+          <p class="section-intro">Additional projects demonstrate the breadth of the optimisation approach across commercial, corporate, retail and hospitality environments, while working through existing controls infrastructure.</p>
+        </div>
+
+        <div class="supporting-case-grid">
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Retail / Mixed-Use</p>
+            <h3>G City Europe — Atrium Flora</h3>
+            <p class="case-context">A 39,800 m² retail and office property with different indoor-climate requirements across common and tenant areas.</p>
+            <ul class="bullet-list">
+              <li>25% electricity saving in common areas</li>
+              <li>11% electricity saving in tenant areas</li>
+              <li>15% gas saving</li>
+            </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-g-city-atrium-flora-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download G City case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
+          </article>
+
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Hospitality / Mixed-Use</p>
+            <h3>European Hotel &amp; Office Building</h3>
+            <p class="case-context">A 25,553 m² hotel and office building combining guest-comfort requirements with office operation.</p>
+            <ul class="bullet-list">
+              <li>16.2% total building energy saving</li>
+              <li>€30.6k reported annual saving</li>
+              <li>16% more even 24-hour indoor climate</li>
+            </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-european-hospitality-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download hospitality case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="client-voice" aria-label="G City Europe client perspective">
+          <p class="eyebrow">Client perspective</p>
+          <blockquote>
+            “We have achieved impressive savings in energy and natural gas consumption, while the indoor comfort in the building has not been compromised. And this building is complex since we have two different types of tenants, both office and retail, who don't have the same requirements in terms of indoor climate, but myCoreAI handles that very well.”
+          </blockquote>
+          <footer>
+            <cite>Ondrej Jirak</cite>
+            <span class="voice-role">COO (CZ/SK), G City Europe</span>
+          </footer>
+        </aside>
+
+        <div class="supporting-case-grid">
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Established commercial reference</p>
+            <h3>One Trinity Gardens</h3>
+            <p class="case-context">A successful multi-let office deployment demonstrating measurable electricity and gas savings through the existing BMS.</p>
+            <ul class="bullet-list">
+              <li>15.4% electricity saving</li>
+              <li>29% gas saving</li>
+              <li>710 MWh energy saved</li>
+            </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-one-trinity-gardens-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download One Trinity Gardens case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
+          </article>
+
+          <article class="tile supporting-case">
+            <p class="case-reference-note">Established corporate reference</p>
+            <h3>Calyx Nottingham</h3>
+            <p class="case-context">A corporate-office deployment showing sustained savings over two reporting years while leveraging the installed BMS.</p>
+            <ul class="bullet-list">
+              <li>23.5% electricity saving in year two</li>
+              <li>46.9% gas saving in year two</li>
+              <li>£104k total saving over two years</li>
+            </ul>
+            <div class="section-cta">
+              <a class="btn text" href="assets/ecoai-calyx-case-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download Calyx case study" data-ga-section="supporting_case_studies">Download case study</a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="client-voice" aria-label="Calyx client perspective">
+          <p class="eyebrow">Client perspective</p>
+          <blockquote>
+            “Having explored most of the conventional carbon reduction techniques across the portfolio, we knew the next initiative was going to need to be something quite special to make an impact. EcoAI answered that call and enabled us to leverage our existing BMS to deliver quite staggering results. The results in year 1 were great; the fact that the system has managed to automatically improve on those savings in year two is even better.”
+          </blockquote>
+          <footer>
+            <cite>Richard Cotterill MBA</cite>
+            <span class="voice-role">Former Senior Facilities Manager, Calyx</span>
+          </footer>
+        </aside>
+      </div>
+      </div>
+    </section>
+
+    <section id="hvac-savings-delivered" class="section proof-focus" aria-labelledby="hvac-savings-delivered-title">
+      <div class="section-header proof-focus-header">
+        <p class="eyebrow">HVAC savings in practice</p>
+        <h2 id="hvac-savings-delivered-title">How HVAC energy savings are delivered</h2>
+        <p class="section-intro">Continuous optimisation reduces unnecessary HVAC operation while maintaining comfort and appropriate ventilation conditions. The BMS remains the control system, while EcoAI helps reduce avoidable airflow and conditioning demand when conditions allow — and lets output increase again when the building needs it.</p>
+      </div>
+      <div class="tile-grid three proof-focus-grid">
+        <article class="tile proof-card">
+          <p class="tile-kicker">1</p>
+          <h3>Reduce unnecessary airflow</h3>
+          <p>When indoor temperature is stable and CO₂ remains low, airflow can operate below the reference level.</p>
+        </article>
+        <article class="tile proof-card">
+          <p class="tile-kicker">2</p>
+          <h3>Reduce fan and conditioning demand</h3>
+          <p>Lower airflow reduces fan demand and the volume of air that needs to be heated or cooled.</p>
+        </article>
+        <article class="tile proof-card">
+          <p class="tile-kicker">3</p>
+          <h3>Keep comfort as the constraint</h3>
+          <p>Airflow rises again when building demand, temperature or ventilation requirements change.</p>
+        </article>
+      </div>
+      <figure class="proof-focus-chart" aria-labelledby="ahu2-example-caption">
+        <figcaption id="ahu2-example-caption">
+          <p>In a reviewed 30-day AHU2 example at Gatty Marine, optimised supply airflow was 27% lower than the reference signal and extract airflow was 22% lower, while average indoor temperature remained at 22.18°C and average CO₂ remained low at 457 ppm.</p>
+          <p>Example shown is based on AHU2 dashboard data for the reviewed period and should not be read as a whole-building annual saving.</p>
+        </figcaption>
+      </figure>
+      <div class="section-cta section-cta-flow proof-focus-cta">
+        <a class="btn secondary" href="assets/docs/ecoai-how-hvac-energy-savings-are-delivered.pdf" target="_blank" rel="noopener" download data-ga-event="download_hvac_savings_explainer" data-ga-link-text="Download the HVAC savings explainer" data-ga-section="hvac_savings_delivered">Download the HVAC savings explainer</a>
+      </div>
+    </section>
+
+    <aside class="section client-voice client-voice--public" aria-label="UK Local Authority client perspective">
+      <p class="eyebrow">Local government perspective</p>
+      <blockquote>
+        “Having completed many of the easy wins including behavioural changes and capital investment, we have been on the lookout for innovative technologies particularly around a buildings BMS system which can be overlooked when it comes to energy savings. Together with the benefits to the occupants, EcoAI has the potential to save a significant amount of energy both across electricity and gas within a short payback.”
+      </blockquote>
+      <footer>
+        <cite>Energy Resource Manager</cite>
+        <span class="voice-role">UK Local Authority</span>
+      </footer>
+    </aside>
+
+    <section class="section proof-support" aria-labelledby="proof-support-title">
+      <div class="section-header">
+        <h2 id="proof-support-title">How savings are verified</h2>
+        <p class="section-intro">EcoAI compares building performance against a weather-normalised baseline, including periods with AI optimisation active and inactive. This helps show whether lower energy use is being achieved under comparable external conditions, rather than simply because of changes in weather.</p>
+      </div>
+      <figure class="proof-focus-chart proof-support-chart" aria-labelledby="proof-support-caption">
+        <img class="proof-chart" src="assets/electricity-savings-scatter-graph.png.png" alt="Electricity savings scatter graph showing AI off and EcoAI active performance comparison." loading="lazy">
+        <figcaption id="proof-support-caption">Orange = AI off. Blue = EcoAI active. Lower points = lower daily electricity use.</figcaption>
+      </figure>
+    </section>
+    <section class="section" aria-labelledby="proof-brief-title">
+      <div class="section-header">
+        <p class="eyebrow">Proof brief</p>
+        <h2 id="proof-brief-title">Download supporting evidence</h2>
+        <p class="section-intro">Use our concise proof brief for stakeholder review, investment discussions, and internal business-case conversations.</p>
+      </div>
+      <div class="section-cta section-cta-flow">
+        <a class="btn ghost" href="ecoai-electricity-brief.pdf" target="_blank" rel="noopener" data-ga-event="see_proof" data-ga-link-text="Open proof brief" data-ga-section="proof_brief">Open proof brief (PDF)</a>
+        <a class="btn text" href="economics.html" data-ga-event="explore_economics" data-ga-link-text="Explore economics" data-ga-section="proof_brief">Explore economics</a>
+      </div>
+    </section>
+
+    <section class="section contact" aria-labelledby="proof-cta-title">
+      <div class="section-header">
+        <h2 id="proof-cta-title">Ready to test likely savings in your building?</h2>
+      </div>
+      <div class="section-cta section-cta-flow">
+        <a class="btn primary" href="contact.html" data-ga-event="start_savings_review" data-ga-link-text="Start a savings review" data-ga-section="proof_bottom">Start a building review</a>
+        <a class="btn secondary" href="economics.html" data-ga-event="explore_economics" data-ga-link-text="Explore economics" data-ga-section="proof_bottom">Explore economics</a>
+        <a class="btn ghost" href="how-it-works.html" data-ga-event="read_how_it_works" data-ga-link-text="Read how it works" data-ga-section="proof_bottom">Read how it works</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="brand"><div class="brand-mark"><img class="brand-logo" src="assets/logo-primary.png" alt="EcoAI logo"></div></div>
+      <div class="footer-text">© 2026 EcoAI Technologies Ltd. HVAC optimisation for more efficient, sustainable buildings.</div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="building-review.html">Building review</a>
+        <a href="how-it-works.html">How it works</a>
+        <a href="sectors.html">Sectors</a>
+        <a href="economics.html">Economics</a>
+        <a href="proof.html">Proof</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+  <!-- Start of HubSpot Embed Code -->
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/139505431.js"></script>
+  <!-- End of HubSpot Embed Code -->
+</body>
+</html>
