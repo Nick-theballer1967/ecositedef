@@ -43,6 +43,76 @@
       margin: 0.25rem 0 1rem;
     }
 
+    .financial-performance-panel {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 16px;
+      border: 1px solid rgba(31, 174, 138, 0.22);
+      background: linear-gradient(150deg, rgba(245, 255, 250, 0.96), rgba(255, 255, 255, 0.9));
+      box-shadow: 0 10px 24px rgba(11, 61, 46, 0.08);
+    }
+
+    .financial-performance-panel .eyebrow {
+      margin-bottom: 0.55rem;
+    }
+
+    .financial-performance-panel h4 {
+      margin: 0 0 0.55rem;
+      color: var(--accent-strong);
+      font-size: 1.04rem;
+      line-height: 1.35;
+    }
+
+    .financial-performance-panel p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .financial-metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.7rem;
+      margin: 1rem 0;
+    }
+
+    .financial-metric {
+      min-width: 0;
+      padding: 0.82rem;
+      border-radius: 14px;
+      border: 1px solid rgba(11, 61, 46, 0.12);
+      background: rgba(255, 255, 255, 0.88);
+    }
+
+    .financial-metric strong {
+      display: block;
+      color: var(--accent-strong);
+      font-size: clamp(1.2rem, 2vw, 1.55rem);
+      line-height: 1.15;
+    }
+
+    .financial-metric span {
+      display: block;
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.86rem;
+      line-height: 1.35;
+    }
+
+    .financial-note {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(11, 61, 46, 0.1);
+      font-size: 0.88rem;
+    }
+
+    .verification-note {
+      margin-top: 0.75rem;
+      color: var(--accent-strong);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
     .supporting-evidence {
       margin-top: 1.8rem;
       padding-top: 1.6rem;
@@ -143,7 +213,8 @@
 
     @media (max-width: 760px) {
       .featured-case-grid,
-      .supporting-case-grid {
+      .supporting-case-grid,
+      .financial-metric-grid {
         grid-template-columns: 1fr;
       }
 
@@ -247,6 +318,33 @@
             <li>9.2% heat reduction</li>
             <li>158 MWh measured energy saving</li>
           </ul>
+          <div class="financial-performance-panel" id="st-andrews-financial-performance">
+            <p class="eyebrow">University of St Andrews — financial performance</p>
+            <h4>A compelling business case. A stronger measured outcome.</h4>
+            <p>Before implementation at the Scottish Oceans Institute (Gatty), EcoAI established a defined commercial proposition based on the building's expected energy-saving potential.</p>
+            <p>Following implementation and the establishment of fuller HVAC control, measured operational performance indicated a financial benefit beyond the original expectation.</p>
+            <div class="financial-metric-grid" aria-label="University of St Andrews financial performance measures">
+              <div class="financial-metric">
+                <strong>£12.5k</strong>
+                <span>Original expected annual gross financial savings at 2024 modelling rates</span>
+              </div>
+              <div class="financial-metric">
+                <strong>£19.4k</strong>
+                <span>Later annualised gross financial savings at later reported energy prices</span>
+              </div>
+              <div class="financial-metric">
+                <strong>£6.9k</strong>
+                <span>Headline annualised value difference, including energy-price changes</span>
+              </div>
+            </div>
+            <p>At St Andrews, the expected energy-saving benefit was established before implementation. Subsequent measured performance demonstrated additional value beyond the original commercial proposition.</p>
+            <p class="financial-note">On a comparable energy-price basis, the original forecast reprices to approximately £15.3k per year, with the later annualised position approximately £4.1k per year, or 27%, above that repriced forecast.</p>
+            <p class="financial-note">Later savings are annualised from measured operational performance following fuller HVAC control, rather than a completed 12-month post-control result. Actual outcomes vary by building.</p>
+            <p class="verification-note">Of the £6.9k increase in annualised financial value, approximately £4.1k represents additional savings at comparable energy prices. The remaining difference reflects changes in energy prices.</p>
+            <div class="section-cta">
+              <a class="btn text" href="assets/st-andrews-financial-performance-study.pdf" target="_blank" rel="noopener" download data-ga-event="download_case_study" data-ga-link-text="Download St Andrews financial performance study" data-ga-section="case_study_summaries_st_andrews">Download financial performance study</a>
+            </div>
+          </div>
           <div class="section-cta">
             <a class="btn text" href="/case-studies/st-andrews.html" data-ga-event="see_proof" data-ga-link-text="View case study" data-ga-section="case_study_summaries_st_andrews">View case study</a>
           </div>
