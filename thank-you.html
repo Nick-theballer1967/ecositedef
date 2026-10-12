@@ -16,13 +16,15 @@
       analytics_storage: 'denied',
       ad_storage: 'denied',
       ad_user_data: 'denied',
-      ad_personalization: 'denied'
+      ad_personalization: 'denied',
+      wait_for_update: 500
     });
     window._hsp = window._hsp || [];
     window._hsp.push(['addPrivacyConsentListener', function(consent) {
       var categories = consent && consent.categories ? consent.categories : {};
-      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
-      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      var consentAllowed = !!(consent && consent.allowed);
+      var analyticsGranted = consentAllowed && categories.analytics ? 'granted' : 'denied';
+      var adsGranted = consentAllowed && categories.advertisement ? 'granted' : 'denied';
       gtag('consent', 'update', {
         analytics_storage: analyticsGranted,
         ad_storage: adsGranted,

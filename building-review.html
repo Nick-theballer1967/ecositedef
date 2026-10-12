@@ -15,13 +15,15 @@
       analytics_storage: 'denied',
       ad_storage: 'denied',
       ad_user_data: 'denied',
-      ad_personalization: 'denied'
+      ad_personalization: 'denied',
+      wait_for_update: 500
     });
     window._hsp = window._hsp || [];
     window._hsp.push(['addPrivacyConsentListener', function(consent) {
       var categories = consent && consent.categories ? consent.categories : {};
-      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
-      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      var consentAllowed = !!(consent && consent.allowed);
+      var analyticsGranted = consentAllowed && categories.analytics ? 'granted' : 'denied';
+      var adsGranted = consentAllowed && categories.advertisement ? 'granted' : 'denied';
       gtag('consent', 'update', {
         analytics_storage: analyticsGranted,
         ad_storage: adsGranted,
@@ -198,7 +200,7 @@
         <p class="section-intro">This short guide explains how EcoAI identifies suitable buildings, what information is useful at the start, how the desktop commercial assessment works and what happens before technical validation.</p>
       </div>
       <div class="section-cta">
-        <a class="btn secondary" href="assets/docs/ecoai-building-review-and-qualification-guide.pdf" target="_blank" rel="noopener" download>Download the guide</a>
+        <a class="btn secondary" href="assets/docs/ecoai-building-review-and-qualification-guide.pdf" target="_blank" rel="noopener" download data-ga-event="download_building_review_guide" data-ga-link-text="Download the guide" data-ga-section="building_review_guide">Download the guide</a>
       </div>
     </section>
 
