@@ -15,13 +15,15 @@
       analytics_storage: 'denied',
       ad_storage: 'denied',
       ad_user_data: 'denied',
-      ad_personalization: 'denied'
+      ad_personalization: 'denied',
+      wait_for_update: 500
     });
     window._hsp = window._hsp || [];
     window._hsp.push(['addPrivacyConsentListener', function(consent) {
       var categories = consent && consent.categories ? consent.categories : {};
-      var analyticsGranted = categories.analytics ? 'granted' : 'denied';
-      var adsGranted = categories.advertisement ? 'granted' : 'denied';
+      var consentAllowed = !!(consent && consent.allowed);
+      var analyticsGranted = consentAllowed && categories.analytics ? 'granted' : 'denied';
+      var adsGranted = consentAllowed && categories.advertisement ? 'granted' : 'denied';
       gtag('consent', 'update', {
         analytics_storage: analyticsGranted,
         ad_storage: adsGranted,
@@ -144,7 +146,7 @@
         <h3>Download the EcoAI value proposition</h3>
         <p>A one-page summary showing how EcoAI helps turn building data into continuous HVAC optimisation — supporting engineers, working through the existing BMS and delivering savings continuously.</p>
         <div class="section-cta">
-          <a class="btn secondary" href="assets/docs/ecoai-value-proposition-continuous-hvac-optimisation.pdf" target="_blank" rel="noopener" download>Download the value proposition</a>
+          <a class="btn secondary" href="assets/docs/ecoai-value-proposition-continuous-hvac-optimisation.pdf" target="_blank" rel="noopener" download data-ga-event="download_value_proposition" data-ga-link-text="Download the value proposition" data-ga-section="value_proposition">Download the value proposition</a>
         </div>
       </div>
     </section>
