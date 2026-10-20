@@ -318,6 +318,17 @@ main.main-compact {
   font-weight: 700;
 }
 
+.hero-messaging .hero-copy h1 {
+  max-width: 34ch;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.hero-messaging .hero-brand-lockup .hero-strapline {
+  max-width: none;
+  text-wrap: balance;
+}
+
 .hero-messaging .hero-benefits {
   max-width: 90ch;
   margin-top: 1.5rem;
