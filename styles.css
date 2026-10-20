@@ -329,6 +329,12 @@ main.main-compact {
   text-wrap: balance;
 }
 
+.hero-messaging .hero-copy h1,
+.hero-messaging .hero-brand-lockup,
+.hero-messaging .hero-copy > p {
+  margin-bottom: clamp(1.25rem, 2vw, 1.75rem);
+}
+
 .hero-messaging .hero-benefits {
   max-width: 90ch;
   margin-top: 1.5rem;
