@@ -318,6 +318,21 @@ main.main-compact {
   font-weight: 700;
 }
 
+.hero-messaging .hero-benefits {
+  max-width: 90ch;
+  margin-top: 1.5rem;
+}
+
+.hero-messaging .hero-benefits .hero-strapline {
+  max-width: none;
+}
+
+@media (max-width: 999.98px) {
+  .hero-messaging .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .lede {
   color: var(--muted);
   font-size: 1.05rem;
