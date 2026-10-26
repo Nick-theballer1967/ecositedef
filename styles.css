@@ -302,6 +302,17 @@ main.main-compact {
   text-shadow: 0 6px 18px rgba(5, 38, 28, 0.35);
 }
 
+#how-hero-title {
+  text-wrap: balance;
+}
+
+@media (max-width: 420px) {
+  #how-hero-title {
+    font-size: clamp(1.5rem, 7vw, 1.75rem);
+    max-width: calc(100vw - 3rem);
+  }
+}
+
 .hero-brand-lockup {
   display: grid;
   gap: 0.65rem;
